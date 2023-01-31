@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import PaginaInicial from '../views/PaginaInicial.vue'
 import Exemplo from '../views/exemplosVue/Exemplo.vue'
+import Historico from '../views/Historico.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -9,6 +10,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: PaginaInicial
+    },
+    {
+      path: '/historico',
+      name: 'historico',
+      component: Historico
     },
     {
       path: '/exemplo',
