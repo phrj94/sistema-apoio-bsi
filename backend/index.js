@@ -9,31 +9,34 @@ const readPdf = async (uri) => {
         // The content
         //console.log(data.text.split('\n')[15]);
         // console.log(data.text.split('\n').length)
-        const breakpoint = /^[a-zA-Z]{3}[0-9]{4}.*(?:aprovado.*|reprovado.*|trancamento.*|matrícula.*|(?:\s+\S+){10}.*aprovado.*)$/gmi
+        const breakpoint = /^[a-zA-Z]{3}[0-9]{4}.*(?:aprovado.*|reprovado.*|matrícula.*|(?:\s+\S+){10}.*aprovado.*)$/gmi
 
-        const splitted = [...data.text.match(breakpoint)]
-        const arraySplitted = splitted.toString().split('\n');
-        const disciplinas = [];
-        arraySplitted.forEach((line,i) => {
-            const regexDisciplina = new RegExp(/^[a-zA-Z]{3}[0-9]{4}/gmi);
-            const regexSituacao = new RegExp(/(aprovado.*|reprovado.*|trancamento.*|matrícula.*)$/gmi)
-            let disciplina = '';
-            if(regexDisciplina.test(line) && regexSituacao.test(line)) {
-                disciplina = line;
-                disciplinas.push(disciplina);
-                disciplina = '';
+        const splitted = data.text.split('\n')//[...data.text.match(breakpoint)]
+        const regexDisciplina = new RegExp(/^[a-zA-Z]{3}[0-9]{4}/mi);
+        const regexSituacao = new RegExp(/(aprovado.*|reprovado.*|matrícula.*|trancamento.*)$/gmi);
+        const regexTrancamento = new RegExp(/(trancamento.*)$/gmi);
+       
+        let disciplinas = [];
+        for (let i = 0; i < splitted.length; i++) {
+            if(regexTrancamento.test(splitted[i])){
+                continue;
             }
-            else {
-                while(!regexSituacao.test(arraySplitted[i])){
-                    disciplina += line;
+            if(regexDisciplina.test(splitted[i]) && regexSituacao.test(splitted[i])){
+                disciplinas.push(splitted[i]);
+                continue;
+            }
+            
+            if(regexDisciplina.test(splitted[i])){
+                let disciplina = '';
+                
+                do {
+                    disciplina += splitted[i];
                     i++;
-                }
+                } while (!regexSituacao.test(splitted[i-1]));
                 disciplinas.push(disciplina);
-                disciplina = '';
             }
-        });
-
-        console.log(disciplinas)
+        }
+        console.log(disciplinas);
     } catch (err) {
         throw new Error(err);
     }
