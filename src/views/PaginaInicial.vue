@@ -7,25 +7,18 @@
 </template>
 <script>
 import CaixaDisciplina from '../components/CaixaDisciplina.vue';
-import { read, utils } from 'xlsx'
+import instance from '../api/instance';
 
 export default {
     name: "PaginaInicial",
     data: () => ({ historico: null }),
     methods: {
         async lerPlanilhaDisciplinas() {
-            //Lê o arquivo enviado pelo usuário no input
             const arquivo = this.$refs.historicoArq.files[0];
-
-            //Transforma o arquivo lido em um array           
-            const arquivoArray = await arquivo.arrayBuffer();
-
-            //Lê o arquivo em buffer e retorna um xlxs manipulável
-            const arquivoXSLX = read(arquivoArray);
-
-            // Transforma as planilhas em cada aba em um JSON.
-            const historicoJSON = utils.sheet_to_json(arquivoXSLX.Sheets[arquivoXSLX.SheetNames[0]]);
-            console.log(historicoJSON)
+            const formData = new FormData();
+            formData.append('file', arquivo);
+            const res = await instance.post("upload", formData, { headers: { 'Content-Type': 'multipart/form-data;boundary=boundary' } })
+            //Lidar com as disciplinas na response HTTP.
         }
     },
     components: { CaixaDisciplina }
