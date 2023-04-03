@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import PaginaInicial from '../views/PaginaInicial.vue'
 import Exemplo from '../views/exemplosVue/Exemplo.vue'
 import Historico from '../views/Historico.vue'
-
+import DisciplinasCurriculoAntigo from '../views/DisciplinasCurriculoAntigo.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -15,6 +15,11 @@ const router = createRouter({
       path: '/historico',
       name: 'historico',
       component: Historico
+    },
+    {
+      path: '/curriculo-antigo',
+      name: 'curriculo-antigo',
+      component: DisciplinasCurriculoAntigo
     },
     {
       path: '/exemplo',

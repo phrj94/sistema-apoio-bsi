@@ -1,0 +1,269 @@
+{
+"CurriculoNovo":[
+ {
+  "Codigo": "TMP0001",
+  "Nome": "Fundamentos de\nSistemas de\nInformação",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Sistemas. Empresas. Sistemas de Informação. Tecnologia da\nInformação. Classificações de Sistemas de Informação. Casos\nde Sucesso e Fracasso de Sistemas de Informação nas Empresas. Ética em Sistemas de Informação."
+ },
+ {
+  "Codigo": "TMP0002",
+  "Nome": "Informação e\nSociedade",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "O profissional de computação e informática, interdisciplinaridade e abordagem sociotécnica. A sociedade em rede e a democratização da informação. Responsabilidade social e sustentabilidade. Impactos humanos, ambientais, sociais e econômicos. Ética e legislação em Sistemas de Informação."
+ },
+ {
+  "Codigo": "TMP0003",
+  "Nome": "Interação Humano-Computador",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Conceitos básicos: usabilidade, acessibilidade\/inclusão social\ne comunicabilidade, engenharia semiótica. Abordagens teóricas em IHC. Sistemas centrados no usuário. Avaliação de interfaces: inspeção e observação de usuários. Identificação de\nnecessidades dos usuários e requisitos de IHC. Tópicos relacionados a aspectos humanos de sistemas."
+ },
+ {
+  "Codigo": "TMP0004",
+  "Nome": "Projeto Integrador I",
+  "CargaHoraria": 30,
+  "Creditos": 1,
+  "Ementa": "Elaboração e implementação de projeto aplicando conhecimen- tos adquiridos utilizando linguagens para novas tecnologias.",
+  "PreRequisitos": "Algoritmos e\nProgramação, Informação\ne Sociedade, Interação\nHumano-Computador"
+ },
+ {
+  "Codigo": "TMP0005",
+  "Nome": "Projeto Integrador II",
+  "CargaHoraria": 60,
+  "Creditos": 2,
+  "Ementa": "Elaboração e implementação de projeto aplicando conhecimentos adquiridos utilizando modelagem de informação e de\nsistemas.",
+  "PreRequisitos": "Análise e Projeto de\nSistemas, Modelagem da\nInformação, Projeto\nIntegrador I"
+ },
+ {
+  "Codigo": "TMP0006",
+  "Nome": "Metodologia\nCientífica e\nTecnológica",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Organização do trabalho científico e tecnológico de pesquisa na\nárea de Sistemas de Informação. A linguagem científica e tecnológica: seus conceitos, ativos e normas básicas. Métodos de\nlevantamento do estado da arte e da técnica. Estratégias para a\nelaboração da escrita e da investigação científica e tecnológica.\nBuscas.",
+  "PreRequisitos": "Projeto Integrador II"
+ },
+ {
+  "Codigo": "TMP0007",
+  "Nome": "Fundamentos de\nCálculo",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Teoria dos Conjuntos, relações e funções. Função do 1º grau,\nfunção do 2º grau, função modular. Composição de funções e\nfunção inversa. Função exponencial e função logarítmica. Funções trigonométricas. Números inteiros e divisibilidade. Aplicações em Sistemas de Informação."
+ },
+ {
+  "Codigo": "TMP0008",
+  "Nome": "Álgebra Linear",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Sistemas de equações lineares. Determinantes. Matrizes. Subespaços vetoriais Euclidianos. Transformações lineares. Autovalores e autovetores; diagonalização. Produto interno.",
+  "PreRequisitos": "Fundamentos de Cálculo"
+ },
+ {
+  "Codigo": "TMP0009",
+  "Nome": "Cálculo Diferencial\ne Integral I",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Limites e continuidade. Definição de derivada. Aplicações das\nderivadas. Integral indefinida e aplicações. Integral Definida\ne aplicações. Teorema Fundamental do Cálculo e aplicações.\nAplicações em Sistemas de Informação.",
+  "PreRequisitos": "Fundamentos de Cálculo "
+ },
+ {
+  "Codigo": "TMP0010",
+  "Nome": "Cálculo Diferencial\ne Integral II",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Técnicas de integração. Aplicações da integral. Funções de\nvárias variáveis: limites, continuidade e diferenciabilidade. Gradiente, Regra da Cadeia, Teorema do Valor Médio. Derivadas\nparciais de ordem superior e Teorema de Schwarz. Máximos e\nmínimos de funções de várias variáveis.",
+  "PreRequisitos": "Cálculo Diferencial e\nIntegral I"
+ },
+ {
+  "Codigo": "TMP0011",
+  "Nome": "Probabilidade",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Revisão de análise combinatória. Axiomas de Kolmogorov.\nProbabilidade condicional. Variáveis aleatórias discretas e contínuas: principais distribuições, valor esperado e variância. Noção de Teorema Central do Limite. Aplicações em Sistemas de\nInformação.",
+  "PreRequisitos": "Cálculo Diferencial e\nIntegral II"
+ },
+ {
+  "Codigo": "TMP0012",
+  "Nome": "Estatística",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Planejamento de pesquisa. Análise exploratória de dados. Noções de amostragem. Inferência estatística: métodos paramétricos e não-paramétricos. Noções de modelos lineares normal\ne logístico. Aplicações em Sistemas de Informação.",
+  "PreRequisitos": "Álgebra Linear,\nProbabilidade"
+ },
+ {
+  "Codigo": "TMP0013",
+  "Nome": "Fundamentos de\nGestão\nOrganizacional",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Fundamentos de Administração. Modelagem organizacional.\nComportamento organizacional. Modelos de gestão. Gestão\nde mudanças. Gestão de pessoas. Gestão da qualidade. Gestão da produção. Gestão de marketing. Gestão de tecnologia\nda informação. Gestão de risco. Planejamento organizacional.\nPlanejamento estratégico.",
+  "PreRequisitos": "Fundamentos de\nSistemas de Informação"
+ },
+ {
+  "Codigo": "TMP0014",
+  "Nome": "Gestão de\nProcessos de\nNegócios\r",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Organizações e processos. Objetivos da gestão de processos\nde negócio. Metamodelos de processos. Linguagens e ferramentas para modelagem de processos. Modelagem de Processos. Análise de processos de negócio. Redesenho de processos de negócio. Automação de processos de negócio.",
+  "PreRequisitos": "Fundamentos de Sistemas de Informação"
+ },
+ {
+  "Codigo": "TMP0015",
+  "Nome": "Governança de\nTecnologia da\nInformação",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Governança de Tecnologia da Informação. Planejamento estratégico de Tecnologia da Informação. Tipos de Sistemas de\nInformação. Arquitetura empresarial. Prospecção de tecnologia. Funções de Tecnologia da Informação. Continuidade de\nnegócio. Análise de investimento em Tecnologia da Informação. Gestão de risco em Tecnologia da Informação. Segurança\nem Tecnologia da Informação.",
+  "PreRequisitos": "Fundamentos de Gestão\nOrganizacional, Redes de\nComputadores"
+ },
+ {
+  "Codigo": "TMP0016",
+  "Nome": "Empreendedorismo\ne Inovação\r",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Fundamentos do empreendedorismo. Aspectos comportamentais do empreendedor. O ambiente dos negócios. Idéias e oportunidades de negócios. Atributos de valor. Cadeia de valor.\nPlanejamento, estratégia e riscos. Competitividade. Modelo de\nnegócios. Plano de negócios. Ferramentas de gestão de negócios. Design Thinking. Economia da experiência e do serviço.",
+  "PreRequisitos": "Gerência de Projetos,\nMetodologia Científica e\nTecnológica"
+ },
+ {
+  "Codigo": "TMP0017",
+  "Nome": "Algoritmos e\nProgramação",
+  "CargaHoraria": 60,
+  "Creditos": 3,
+  "Ementa": "Introdução à computação. Algoritmos e resolução de problemas. Tipos de dados, variáveis, constantes, expressões e operadores. Entradas e saídas básicas. Controle de fluxo procedimental: sequencial, seleção e repetição. Funções. Vetores e\nmatrizes. Cadeias de caracteres. Desenvolvimento de programas. Depuração e testes."
+ },
+ {
+  "Codigo": "TMP0018",
+  "Nome": "Introdução à Lógica\nComputacional\r",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Introdução à linguagem da lógica proposicional e sua relação\ncom a algebra Booleana. Sistemas formais de dedução completos e corretos. Introdução à lógica de primeira ordem. Regras específicas de dedução para lógica. Os princípios da indução e aplicações. Definições e algoritmos recursivos. Princípios e técnicas de contagem combinatórias fundamentais."
+ },
+ {
+  "Codigo": "TMP0019",
+  "Nome": "Técnicas de\nProgramação",
+  "CargaHoraria": 60,
+  "Creditos": 3,
+  "Ementa": "Algoritmos recursivos. Conceitos de programação orientada a objetos. Arquivos. Uso de estruturas de dados básicas da bi- blioteca padrão (fila, pilha, lista).",
+  "PreRequisitos": "Algoritmos e Programação"
+ },
+ {
+  "Codigo": "TMP0020",
+  "Nome": "Estruturas de Dados",
+  "CargaHoraria": 60,
+  "Creditos": 3,
+  "Ementa": "Noções básicas de complexidade. Listas lineares. Árvores: ár- vores binárias de busca e árvores balanceadas. Filas de priori- dades. Hashing. Aplicações em grafos. ",
+  "PreRequisitos": "Técnicas de Programação"
+ },
+ {
+  "Codigo": "TMP0021",
+  "Nome": "Linguagens e\nParadigmas de\nProgramação",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Alfabetos e linguagens. Gramáticas. Autômatos finitos e linguagens regulares. Máquinas de pilha e linguagens livres de\ncontexto. Máquinas de Turing. Fundamentos de linguagens de\nprogramação. Definição e caracterização dos principais paradigmas de programação: linguagens imperativas, orientadas a\nobjetos, funcionais e lógicas.",
+  "PreRequisitos": "Introdução à Lógica\nComputacional, Técnicas\nde Programação"
+ },
+ {
+  "Codigo": "TMP0022",
+  "Nome": "Projeto e Análise\nde Algoritmos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Critérios de análise, correção e eficiência. Complexidade de\npior caso e caso médio. Divisão e conquista; Algoritmos gulosos; Programação dinâmica. Modelagem em grafos. Teoria da\ncomplexidade: problemas de decisão, transformações polinomiais, classes P, NP, Co-NP e NP-completa.",
+  "PreRequisitos": "Cálculo Diferencial e\nIntegral I, Estruturas de\nDados, Introdução à\nLógica Computaciona"
+ },
+ {
+  "Codigo": "TMP0023",
+  "Nome": "Análise e Projeto\nde Sistemas",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Orientação a objetos. Especificação de sistemas. Engenharia\nde requisitos de sistemas. Estudo de viabilidade. Modelagem\nde sistemas orientada a objetos. Análise e solução de problemas. Estudos de casos.",
+  "PreRequisitos": "Gestão de Processos de\nNegócios, Interação\nHumano-Computador,\nTécnicas de Programação"
+ },
+ {
+  "Codigo": "TMP0024",
+  "Nome": "Engenharia de\nSoftware I",
+  "CargaHoraria": 60,
+  "Creditos": 3,
+  "Ementa": "Fundamentos de Engenharia de Software. Processos de software. Arquitetura e projeto de sistemas orientados a objetos. Construção de sistemas. Qualidade e manutenção de\nsistemas. Aplicações no desenvolvimento de um projeto de\nsoftware.",
+  "PreRequisitos": "Análise e Projeto de\nSistemas, Modelagem da\nInformação\r"
+ },
+ {
+  "Codigo": "TMP0025",
+  "Nome": "Engenharia de\nSoftware II",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Sistemas de controle de versão. Sistemas de recuperação de\ndependências e de construção de software. Estilos de programação. Revisões e inspeções. Técnicas e estratégias de teste\nde software. Testes de unidade. Testes de integração. Integração de programas. Princípios de projeto de sistemas. Módulos,\ninterfaces, acoplamento. Padrões de projeto. Tratamento de\nexceções.",
+  "PreRequisitos": "Engenharia de Software I 1\r"
+ },
+ {
+  "Codigo": "TMP0026",
+  "Nome": "Gerência de\nProjetos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Conceitos de projeto e gerência de projetos. Processos da gerência de projetos. Planejamento de projetos. Plano de projeto.\nAcompanhamento de projetos. Finalização de projetos. Projetos de Tecnologia da Informação.",
+  "PreRequisitos": "Engenharia de Software"
+ },
+ {
+  "Codigo": "TMP0027",
+  "Nome": "Modelagem da\nInformação",
+  "CargaHoraria": 60,
+  "Creditos": 3,
+  "Ementa": "Visão geral de dados, informação e conhecimento. Modelos\nde abstração de dados. Processo de modelagem de dados e\ninformação. Projeto lógico de modelos de dados. Metodologias\nde construção de modelos de dados. Estudos de casos.\r",
+  "PreRequisitos": "Técnicas de Programação"
+ },
+ {
+  "Codigo": "TMP0028",
+  "Nome": "Armazenamento e\nGestão de Dados",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Estruturas de armazenamento e organização de dados. Tecnologias e arquiteturas de bancos de dados. Sistemas gerenciadores de bancos de dados. Sistemas de gerenciamento de\nbancos de dados distribuídos. Tecnologias de big data. Projeto\nfísico de armazenamento e gestão de dados. Estudos de caso.",
+  "PreRequisitos": "Estruturas de Dados,\nModelagem da\nInformação"
+ },
+ {
+  "Codigo": "TMP0029",
+  "Nome": "Ciência de Dados",
+  "CargaHoraria": 60,
+  "Creditos": 3,
+  "Ementa": "O pensamento analítico baseado em dados. Problemas de negócio e soluções de ciência de dados. Modelos analíticos (exploratório, descritivo, diagnóstico, preditivo, prescritivo). Decisão orientada por dados analíticos. Engenharia orientada por\ndados analíticos. Ciência de dados e estratégias de negócio.\nAplicações.",
+  "PreRequisitos": "Armazenamento e Gestão\nde Dados, Estatística"
+ },
+ {
+  "Codigo": "TMP0030",
+  "Nome": "Arquitetura de\nComputadores",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Histórico do desenvolvimento de computadores. Princípios e\ncomponentes. Funcionamento da UCP, memória e dispositivos\nde entrada\/saída."
+ },
+ {
+  "Codigo": "TMP0031",
+  "Nome": "Sistemas\nOperacionais",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Histórico do desenvolvimento dos sistemas operacionais. Princípios e componentes. Chamadas de sistema. Gerenciamento de processos e threads. Gerenciamento de memória:\npaginação e segmentação. Gerenciamento de entrada\/saída:\ndispositivos em bloco e caractere. Sistemas de arquivos.\nVirtualização.",
+  "PreRequisitos": "Arquitetura de\nComputadores\n\r"
+ },
+ {
+  "Codigo": "TMP0032",
+  "Nome": "Redes de\nComputadores",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Redes de computadores e Internet. Protocolos. Tecnologias de\nredes. Arquitetura TCP\/IP. Serviços e protocolos das camadas\nTCP\/IP.",
+  "PreRequisitos": "Fundamentos de\nSistemas de Informação,\nSistemas Operacionais"
+ },
+ {
+  "Codigo": "TMP0033",
+  "Nome": "Projeto de Graduação 1",
+  "CargaHoraria": 60,
+  "Creditos": 3,
+  "Ementa": "Orientação para a escolha do tema para o desenvolvimento do Projeto de Graduação e escrita da monografia. Elaboração de uma\nproposta de trabalho de final de curso com a definição de um professor orientador.",
+  "PreRequisitos": "Metodologia\nCientífica e\nTecnológica"
+ },
+ {
+  "Codigo": "TMP0034",
+  "Nome": "Projeto de Graduação 2",
+  "CargaHoraria": 60,
+  "Creditos": 2,
+  "Ementa": "Implementação do projeto formulado em Projeto de Graduação I.\nElaboração de uma monografia e apresentação oral do trabalho a\numa banca examinadora.",
+  "PreRequisitos": "Projeto de\nGraduação I"
+ }
+]
+}

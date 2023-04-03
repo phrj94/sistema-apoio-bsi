@@ -1,10 +1,10 @@
 <template>
     <v-card class="pa-2 largura-caixa" :color="corFundoCartao">
-        <v-card-title>{{ disciplina.sigla }}</v-card-title>
+        <v-card-title>{{ disciplina.Sigla }}</v-card-title>
         <v-card-subtitle>{{ disciplina.codigo }}</v-card-subtitle>
-        <v-card-actions>
+        <!-- <v-card-actions>
             <v-btn color="indigo" variant="flat">Disciplinas compatíveis</v-btn>
-        </v-card-actions>
+        </v-card-actions> -->
     </v-card>
 </template>
 <script>
@@ -24,14 +24,11 @@ export default {
             else if (this.status === 'APV') return 'green';
             else return '#F5F5F5';
         }
-    },
-    data: () => ({
-        discplinas: []
-    })
+    }
 }
 </script>
 <style>
     .largura-caixa{
-        width: 300px;
+        width: 120px;
     }
 </style>

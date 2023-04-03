@@ -1,0 +1,643 @@
+{
+"CurriculoNovoOptativas":[
+ {
+  "Codigo": "TMP0035",
+  "Nome": "Acessibilidade",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Conceitos básicos. Perfis de usuários. Visão. Audição. Analfabetismo funcional. Terceira idade. Deficiência física\/motora. Avaliação de interfaces. Acessibilização. Navegação acessível. Conteúdo acessível. Entrada de dados acessível.",
+  "PreRequisitos": "Interação Humano-Computador"
+ },
+ {
+  "Codigo": "TMP0036",
+  "Nome": "Cibercultura",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Pensamento interdisciplinar. Cibercultura e web na Sociedade. Web\n2.0 e software social. Cibercultura, tecnologia e vida social na cultura\ncontemporânea. Tecnologias da Informação e a web como ciência.\nGovernança na Internet (incluindo ética, privacidade e confiabilidade\nna web). Teorias da cibercultura."
+ },
+ {
+  "Codigo": "TMP0037",
+  "Nome": "Ciência de redes",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Fundamentos de ciência de redes. Tipos de redes reais. Caracterização estrutural de redes. Fenômenos em redes: efeito mundo pequeno, redes livres de escala, clusterização, comunidades. Modelos\naleatórios de redes: Erdős–Rényi, Barabási–Albert, Watts–Strogatz.\nProcessos sobre redes. Redes temporais. Aplicações.",
+  "PreRequisitos": "Estruturas de dados, Probabilidade"
+ },
+ {
+  "Codigo": "TIN0106",
+  "Nome": "Desenvolvimento de páginas web",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Linguagens para escrita de páginas web, multimídia para web, e pro- jeto web (webdesign)."
+ },
+ {
+  "Codigo": "TMP0038",
+  "Nome": "Informática na Educação",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Histórico, evolução e tendências. Teorias de Aprendizagem e Métodos Educacionais. Sistemas computacionais voltados para a educação (Tutoriais (CAI), Software educacional, Jogos, Simuladores, Editores, Tecnologias da Informação e Comunicação (TICs). Educação\na Distância (EAD), Redes Sociais."
+ },
+ {
+  "Codigo": "TMP0039",
+  "Nome": "Novas Formas de Economia",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Quarta revolução industrial. A nova organização. O emprego tecnológico e o impacto nas transformações econômicas. Economia centrada\nem pessoas. Evolução e novos desafios sociais.\r"
+ },
+ {
+  "Codigo": "TMP0040",
+  "Nome": "Pensamento Computacional",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e\/ou técnica de Pensa- mento Computacional."
+ },
+ {
+  "Codigo": "TMP0041",
+  "Nome": "Pensamento\nSistêmico",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Teoria Geral de Sistemas. Cibernética. A Visão Sistêmica da Vida. Pensamento Sistêmico e Sistemas de Informação."
+ },
+ {
+  "Codigo": "TMP0042",
+  "Nome": "Projeto de\nAplicação de\nSistemas de\nInformação em\num Contexto\nEspecífico",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tipos de Sistemas de informação em contextos específicos; Sistemas\nde informação no contexto empresarial e social; Projeto de Sistemas\nde Informação; Análise de experiências práticas; Aceitação e uso de\nSistemas de Informação; Impactos dos Sistemas de Informação em\nseu contexto de aplicação; Evolução dos Sistemas de Informação."
+ },
+ {
+  "Codigo": "TIN0159",
+  "Nome": "Sistemas Colaborativos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Importância do Trabalho em Grupo. Conceitos – CSCW e Groupware.\nHistórico da área. Principais aplicações. Aspectos de suporte à colaboração (coordenação, percepção, comunicação, memória de grupo).\nSistemas de Apoio a Reuniões. Sistemas de Gerenciamento de Fluxo\nde Trabalho (workflow). Aprendizado Cooperativo Apoiado por Computador. Uso de Groupware em Organizações. Memória Organizacional. Aspectos de implementação de groupware.",
+  "PreRequisitos": "Engenharia de Software 2"
+ },
+ {
+  "Codigo": "TMP0043",
+  "Nome": "Teorias e\nPráticas de\nSistemas de\nInformação",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos teóricos e práticos de Sistemas de Informação: informação,\nsistemas e sociedade; algoritmos e estruturas de dados; engenharia\nde software; modelagem e armazenamento de dados e informação;\narquitetura e infraestrutura de redes e sistemas; gestão organizacional\ne empreendedorismo."
+ },
+ {
+  "Codigo": "TMP0044",
+  "Nome": "Tópicos em\nInformática na\nEducação",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e\/ou técnica de Informática na Educação. Entre eles tem-se: Teorias de Aprendizagem\ne Métodos Educacionais; Sistemas computacionais voltados para a\neducação; Educação a Distância (EAD) e Redes Sociais. Modelagem\nde Competências. Métodos de avaliação e definição de currículos orientados por competências; Gamificação.\r"
+ },
+ {
+  "Codigo": "TMP0045",
+  "Nome": "Tópicos em\nGestão de\nProcessos de\nNegócio\r",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em gestão de\nprocessos de negócio na gestão de Sistemas de Informação e da Tecnologia da Informação.",
+  "PreRequisitos": "Gestão de\nProcessos de\nNegócios"
+ },
+ {
+  "Codigo": "TMP0046",
+  "Nome": "Tópicos em\nGestão do\nConhecimento",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Sociedade do conhecimento. Dado, informação e conhecimento. Criação do conhecimento. Gestão do conhecimento nas organizações.\nAprendizagem individual e organizacional. Cultura nas organizações.\nPapel da TIC na gestão do conhecimento. Gestor do conhecimento",
+  "PreRequisitos": "Fundamentos de\nGestão\nOrganizacional"
+ },
+ {
+  "Codigo": "TMP0047",
+  "Nome": "Tópicos em\nInovação\nTecnológica",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte\/técnica em Inovação Tecnológica.",
+  "PreRequisitos": "Metodologia Científica e Tecnológica"
+ },
+ {
+  "Codigo": "TMP0048",
+  "Nome": "Tópicos em\nPropriedade\nIntelectual",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte\/técnica em Propriedade Intelectual.",
+  "PreRequisitos": "Metodologia Científica e Tecnológica"
+ },
+ {
+  "Codigo": "TMP0049",
+  "Nome": "Algoritmos para\nCiência de\nDados",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Aspectos importantes ao lidar com dados. Dados em altas dimensões. Representação de dados em dimensões menores. Algoritmos\npara streams de dados. Busca de itens similares. Modelos de aprendizagem de máquina.",
+  "PreRequisitos": "Álgebra Linear,\nEstruturas de Dados,\nProbabilidade"
+ },
+ {
+  "Codigo": "TIN0144",
+  "Nome": "Algoritmos para Problemas Combinatórios",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Problemas de otimização combinatória. Programação Dinâmica. Algoritmos Gulosos. Branch&bound.e A*. Heurísticas e metaheurísticas. Simulated annealing, busca tabu, algoritmos genéticos, GRASP\ne VNS.",
+  "PreRequisitos": "Projeto e Análise de\nAlgoritmos"
+ },
+ {
+  "Codigo": "TMP0050",
+  "Nome": "Análise\nMultiparadigma\nde Algoritmos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Melhores práticas de programação. Noções de controle de versão. Técnicas avançadas de programação de acordo com a Linguagem de Programação.",
+  "PreRequisitos": "Estruturas de Dados, Linguagens e Paradigmas de Programação"
+ },
+ {
+  "Codigo": "TMP0051",
+  "Nome": "Aplicações de\nPesquisa\nOperacional",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos emergentes e\/ou relevantes para o enriquecimento e atualização das discussões pertinentes a aplicações de Pesquisa Operacional, preferencialmente em Sistemas de Informação, envolvendo\na discussão teórica da abordagem a diversos problemas, sua implementação em linguagens de programação de alto nível e sua integração com softwares resolvedores de problemas de programação\nmatemática, e interseção com aspectos relacionados com a área de\nInteligência Artificial.",
+  "PreRequisitos": "Projeto e Análise de\nAlgoritmos\r"
+ },
+ {
+  "Codigo": "TMP0052",
+  "Nome": "Aprendizagem\nProfunda",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Apresentação das principais arquiteturas de aprendizagem profunda\n(deep learning). Redes neurais feedforward. Redes neurais convolucionais. Máquina restrita de Boltzmann. Redes recorrentes. Autoencoder. Redes generativas adversariais. Aprendizado por reforço.\nAplicações a problemas de diversas áreas.\r",
+  "PreRequisitos": "Álgebra Linear,\nCálculo Diferencial e\nIntegral II, Estruturas\nde Dados"
+ },
+ {
+  "Codigo": "TMP0053",
+  "Nome": "Estruturas de\nDados\nAvançadas",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Dicionários. Árvores Balanceadas. Heaps. Estruturas para Busca em Texto. Estruturas para Buscas Geométricas.",
+  "PreRequisitos": "Estruturas de Dados, Probabilidade"
+ },
+ {
+  "Codigo": "TMP0054",
+  "Nome": "Estruturas\nDiscretas com\nAlgoritmos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Princípios de aritmética modular. Introdução a grafos, principais con- ceitos e algoritmos fundamentais. ",
+  "PreRequisitos": "Introdução à Lógica Computacional"
+ },
+ {
+  "Codigo": "TMP0055",
+  "Nome": "Estudo de\nProblemas de\nOtimização\nCombinatória",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Estudo aprofundado de algum(ns) problema(s) clássico(s) de otimização (ou de localização) combinatório(s) NP-Completos, tais como,\npor exemplo, árvore de Steiner, satisfabilidade, caixeiro viajante, etc.\nModelagem. Complexidade. Aplicações. Variações, algoritmos\nexatos, algoritmos aproximativos, algoritmos heurísticos, sistemas\ndisponíveis.",
+  "PreRequisitos": "Cálculo Diferencial e\nIntegral II,\nEstatística, Projeto e\nAnálise de\nAlgoritmos"
+ },
+ {
+  "Codigo": "TMP0056",
+  "Nome": "Fluxos em\nRedes",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Problemas de fluxo em redes, com ênfase no problema do fluxo máximo. São apresentados a teoria elementar sobre o tema, algoritmos\ne suas respectivas análises de corretude e eficiência, bem como aplicações e extensões do problema do fluxo máximo.",
+  "PreRequisitos": "Projeto e Análise de\nAlgoritmos"
+ },
+ {
+  "Codigo": "TIN0147",
+  "Nome": "Fundamentos de\nRepresentação\nde\nConhecimento e\nRaciocínio",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Revisão de Lógica Proposicional e de Predicados. Programação em\nLógica e Prolog. Resolução Automática. Lógica Descritiva. Noções de tópicos avançados de Representação de Conhecimento e\nRaciocínio.",
+  "PreRequisitos": "Introdução à Lógica Computacional"
+ },
+ {
+  "Codigo": "TMP0057",
+  "Nome": "Heurísticas\nInteligentes:\nTécnicas e\nAplicações",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Revisão sobre teoria da complexidade. Estudo de alguns problemas\nclássicos de otimização combinatória NP-Completos ou NP-Difíceis,\ntais como, por exemplo, satisfatibilidade, caixeiro viajante, agrupamento de módulos de software, recobrimento de conjuntos, empacotamento de objetos, entre outros. Estudo de métodos heurísticos para problemas de otimização combinatória difíceis, como, por\nexemplo, métodos construtivos, algoritmos aproximativos, busca local e metaheurísticas. Aplicações. Experimento computacional com\nheurísticas.",
+  "PreRequisitos": "Estruturas de Dados"
+ },
+ {
+  "Codigo": "TMP0058",
+  "Nome": "Introdução à\nInteligência\nArtificial",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Visão geral sobre: Busca em espaços de estados, Representação de\nconhecimento, Ontologia, Sistemas especialistas e agentes, Aprendizagem de máquina e Redes neurais.",
+  "PreRequisitos": "Estruturas de Dados,\nIntrodução à Lógica\nComputacional"
+ },
+ {
+  "Codigo": "TMP0059",
+  "Nome": "Introdução\nAlgorítmica a\nGrafos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Algoritmos básicos em grafos: árvores geradoras de peso mínimo, algoritmos de busca, caminhos de peso mínimo. Arborescência de peso\nmínimo. Determinação de conectividade. Fluxos em grafos-redes.\nEmparelhamentos. Outros problemas de otimização modelados por\ngrafos",
+  "PreRequisitos": "Projeto e Análise de\nAlgoritmos"
+ },
+ {
+  "Codigo": "TMP0060",
+  "Nome": "Modelagem e\nOntologias",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre representação do conhecimento. Modelagem conceitual de ontologias. Ontologias de fundamentação. Linguagens para descrição de ontologias. Aplicações em Sistemas de\nInformação.",
+  "PreRequisitos": "Introdução à Lógica\nComputacional"
+ },
+ {
+  "Codigo": "TMP0061",
+  "Nome": "Processamento\nBaseado em\nRestrições",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Redes de restrições. Propagação de restrições. Estratégias gerais\nde busca. Métodos baseados em consistência. Métodos baseados\nem decomposição de árvores. Linguagens para programação baseada em restrições. Otimização de restrições. Redes probabilísticas.\nProgramação lógica baseada em restrições.",
+  "PreRequisitos": "Cálculo Diferencial e\nIntegral II,\nEstatística, Projeto e\nAnálise de\nAlgoritmos"
+ },
+ {
+  "Codigo": "TIN0142",
+  "Nome": "Programação Linear",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Modelagem de problemas para a forma de programação linear. Método Simplex. Soluções iniciais e convergência. Dualidade e análise\nde sensibilidade. Princípio da Decomposição. Algoritmos de pontos\ninteriores.",
+  "PreRequisitos": "Projeto e Análise de\nAlgoritmos"
+ },
+ {
+  "Codigo": "TMP0062",
+  "Nome": "Técnicas de\nProgramação\nAvançada",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Revisão de técnicas de programação. Melhores práticas de programação. Noções de controle de versão. Dojo de programação. Técnicas avançadas de programação. Noções de programação funcional.\nEstruturas de dados avançadas. Gráficos e visualização de dados.\nManipulação de texto. Noções de desempenho e paralelismo. Programação para aplicações de larga escala. Aplicações em ciência de\ndados e computação científica.",
+  "PreRequisitos": "Estruturas de Dados"
+ },
+ {
+  "Codigo": "TMP0063",
+  "Nome": "Tópicos em\nAlgoritmos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte na área de Algoritmos.",
+  "PreRequisitos": "Projeto e Análise de Algoritmos"
+ },
+ {
+  "Codigo": "TMP0064",
+  "Nome": "Tópicos em\nAplicações de\nLógica e\nRaciocínio\nAutomatizado",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos emergentes e\/ou relevantes para o enriquecimento e atualização das discussões pertinentes aos campos de desenvolvimento\nrepresentação do conhecimento e raciocínio automatizado, podendo\nversar sobre agentes lógicos, lógicas específicas, engenharia de ontologias, entre outras formas",
+  "PreRequisitos": "Introdução à Lógica\nComputacional,\nProjeto e Análise de\nAlgoritmos"
+ },
+ {
+  "Codigo": "TMP0065",
+  "Nome": "Tópicos em\nAprendizagem\nde Máquina",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em aprendizagem de máquina.",
+  "PreRequisitos": "Cálculo Diferencial e\nIntegral II,\nEstatística, Projeto e\nAnálise de\nAlgoritmos"
+ },
+ {
+  "Codigo": "TMP0066",
+  "Nome": "Tópicos em\nEngenharia de\nOntologias",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em engenharia de ontologias aplicadas no desenvolvimento de sistemas de\ninformação",
+  "PreRequisitos": "Introdução à Lógica\nComputacional"
+ },
+ {
+  "Codigo": "TMP0067",
+  "Nome": "Tópicos em\nProcessamento\nde Linguagem\nNatural",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em processa- mento de linguagem natural.",
+  "PreRequisitos": "Cálculo Diferencial e\nIntegral II,\nEstatística, Projeto e\nAnálise de\nAlgoritmos"
+ },
+ {
+  "Codigo": "TMP0068",
+  "Nome": "Desenvolvimento\nde Servidor Web",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Aplicações baseadas na web. Projeto de aplicações baseadas na\nweb. Frameworks de lado servidor. Frameworks de lado cliente. Tecnologias de construção de aplicações para web. Testes de aplicações\nbaseadas na web. Bibliotecas de tags.",
+  "PreRequisitos": "Armazenamento e\nGestão de Dados"
+ },
+ {
+  "Codigo": "TMP0069",
+  "Nome": "Engenharia de\nSistemas\nComplexos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Introdução à engenharia de sistemas complexos, de larga escala e de\nlongo prazo. Tipos de sistemas complexos. Conceitos básicos. Histórico. Definição e exemplos. Taxonomia e características. Técnicas\nde modelagem, análise e monitoramento de plataformas de sistemas\ncomplexos. Desafios e perspectivas de pesquisa e práticas. Aplicações em casos reais.",
+  "PreRequisitos": "Engenharia de\nSoftware II"
+ },
+ {
+  "Codigo": "TMP0070",
+  "Nome": "Interfaces\nMóveis",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Introdução. Mundo móvel. O ambiente móvel. Experiência do usuário\n(EU) em dispositivos Móveis. Elementos de interface. Princípios para\numa boa experiência do usuário. Atividades no design de uma boa\nexperiência do usuário. Princípios de design. Acessibilidade móvel.\nMapeando o WCAG para dispositivos móveis.",
+  "PreRequisitos": "Interação HumanoComputador\r"
+ },
+ {
+  "Codigo": "TMP0071",
+  "Nome": "\nProjeto de Jogos\nDigitais",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Conceitos e definições de jogos e jogos digitais. Os gêneros de jogos\ndigitais. Elementos de projeto de jogos (mecânicas, narrativas, estética e tecnologia). Projeto de jogo digital. Tecnologias de suporte ao\nprojeto de jogo digital. Documento de game design. Jogadores. Tecnologias de desenvolvimento de jogos digitais (game engines). Avaliação de jogos. Gamificação. Jogos sérios. Prototipação e desenvolvimento do jogo digital.",
+  "PreRequisitos": "Modelagem da Informação"
+ },
+ {
+  "Codigo": "TMP0072",
+  "Nome": "Tópicos em\nArquitetura de\nSoftware",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em arquitetura de software no desenvolvimento de sistemas de informação.",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0073",
+  "Nome": "Tópicos em\nAspectos\nHumanos,\nEconômicos e\nSociais de\nSoftware",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em aspectos\nhumanos, econômicos e sociais no desenvolvimento de sistemas de\ninformação.",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0074",
+  "Nome": "Tópicos em\nConstrução de\nSoftware",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em construção de software no desenvolvimento de sistemas de informação.",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0075",
+  "Nome": "Tópicos em\nEngenharia de\nRequisitos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em engenharia de requisitos no desenvolvimento de sistemas de informação. ",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0076",
+  "Nome": "Tópicos em\nEngenharia de\nSoftware\nExperimenta",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em engenharia de software experimental no desenvolvimento de sistemas de\ninformação.",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0077",
+  "Nome": "Tópicos em\nGerência de\nConfiguração de\nSoftware\r",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em gerência de configuração de software no desenvolvimento de sistemas de\ninformação.",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0078",
+  "Nome": "Tópicos em\nGerência de\nProjetos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em gerência de projetos no desenvolvimento de sistemas de informação. ",
+  "PreRequisitos": "Gerência de Projetos"
+ },
+ {
+  "Codigo": "TMP0079",
+  "Nome": "Tópicos em\nManutenção de\nSoftware",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em manutenção de software no desenvolvimento de sistemas de informação. ",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0080",
+  "Nome": "Tópicos em\nModelagem de\nSoftware",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em modelagem de software no desenvolvimento de sistemas de informação. ",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0081",
+  "Nome": "Tópicos em\nProcessos de\nSoftware",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em processos de software no desenvolvimento de sistemas de informação.",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0082",
+  "Nome": "Tópicos em\nProjeto de\nSoftware",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em projeto de software no desenvolvimento de sistemas de informação. ",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0083",
+  "Nome": "Tópicos em\nQualidade de\nSoftware",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em qualidade de software no desenvolvimento de sistemas de informação.",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0084",
+  "Nome": "Tópicos em\nSistemas\nColaborativos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em sistemas colaborativos no desenvolvimento de sistemas de informação.",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TMP0085",
+  "Nome": "Tópicos em\nVerificação,\nValidação e\nTestes de\nSoftware",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Tópicos selecionados sobre o estado da arte e prática em verificação,\nvalidação e testes de software no desenvolvimento de sistemas de\ninformação.",
+  "PreRequisitos": "Engenharia de Software II"
+ },
+ {
+  "Codigo": "TIN0135",
+  "Nome": "Administração\nde Banco de\nDados",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Administração de dados. Administração de Banco de Dados. Projeto e implementação de uma base de dados relacional, em ambiente\ncliente-servidor, utilizando SGBD. Importação e exportação de dados.\nEstudo dos planos de acesso gerados pelas consultas. Otimização de\nconsultas. Uso de índices. Gerenciamento de espaço em disco. Tuning. Cópia e recuperação da base de dados.",
+  "PreRequisitos": "Armazenamento e\nGestão de Dados"
+ },
+ {
+  "Codigo": "TMP0086",
+  "Nome": "Banco de Dados\nDistribuídos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Conceito de banco de dados distribuídos (BDD). Tipos de banco de\ndados distribuídos. Arquitetura de bancos de dados distribuídos. Técnicas de fragmentação, replicação e alocação de dados para projeto\nde banco de dados distribuídos. Processamento e otimização de consultas em banco de dados distribuídos. Visão geral de gerenciamento\nde transações e controle de concorrência em banco de dados distribuídos. Gerenciamento de catálogo distribuído. Tendências em bancos\nde dados distribuídos.",
+  "PreRequisitos": "Armazenamento e\nGestão de Dados\r"
+ },
+ {
+  "Codigo": "TMP0087",
+  "Nome": "Banco de Dados\nNão\nConvencionais",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Bancos de dados NoSQL. Modelos de dados agregados. Modelos de distribuição e processamento. Tipos de bancos de dados\nNoSQL. Bancos de dados NewSQL. Propriedades dos bancos de dados NoSQL e NewSQL. Aplicações e exemplos de SGBDs NoSQL e\nNewSQL.",
+  "PreRequisitos": "Armazenamento e\nGestão de Dados"
+ },
+ {
+  "Codigo": "TMP0088",
+  "Nome": "Projeto de\nAplicações com\nDados Abertos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Dados Abertos: visão geral, importância e uso. Portais de dados abertos. Transparência digital. Ferramentas para construção de sistemas\nde inteligência de negócios. Desenvolvimento de software com uso\nde dados abertos.",
+  "PreRequisitos": "Modelagem da\nInformação"
+ },
+ {
+  "Codigo": "TMP0089",
+  "Nome": "Recuperação de\nInformação",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Processo de busca e recuperação de informação. Modelos de recuperação de informação. Avaliação de sistemas de recuperação de\ninformação. Ferramentas para recuperação de informação. Estado\nda arte de recuperação de informação.",
+  "PreRequisitos": "Armazenamento e\nGestão de Dados,\nEstatística"
+ },
+ {
+  "Codigo": "TMP0090",
+  "Nome": "Séries\nTemporais",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Séries temporais: estacionárias e não-estacionárias. Processos\nestacionários. Modelagem de séries temporais. Modelos autoregressivos: MA, ARMA e ARIMA. Modelos sazonais. Medidas\nde auto-correlação. Seleção de modelos. Critérios de informação:\nAkaike e Schwarz. Previsão com modelos. Modelos de Espaço de\nEstados (dinâmicos). Aplicações.",
+  "PreRequisitos": "Modelagem da\nInformação"
+ },
+ {
+  "Codigo": "TMP0091",
+  "Nome": "Descoberta de\nConhecimento\nem Dados",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "O processo de Descoberta de Conhecimento em Dados (KDD). Dados analíticos e tomada de decisão. Automação de processos com\nAprendizado de Máquina. Padrões em dados. Aprendizado supervisionado, não-supervisionado, semi-supervisionado e por reforço. Regressão. Classificação. Análise de clustering. Regras de associação.\nDetecção de anomalias. Redução de dimensionalidade. Seleção de\natributos. Avaliação de modelos e seleção de parâmetros. Métricas\nde desempenho. Aplicações em bem-estar social.",
+  "PreRequisitos": "Ciência de Dados "
+ },
+ {
+  "Codigo": "TMP0092",
+  "Nome": "Processamento\ne Mineração de\nTexto",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Visão geral de Análise de Texto. Captura e preparação dos dados\ntextuais não estruturados. Técnicas e aplicações de análise textual:\nrecuperação e extração de Informação, reconhecimento de entidades\nnomeadas, análise de sentimentos, análise textual preditiva, dentre\noutras.",
+  "PreRequisitos": "Ciência de Dados "
+ },
+ {
+  "Codigo": "TMP0093",
+  "Nome": "Projetos de\nCiência de\nDados para o\nBem-Estar\nSocia",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Visão geral da Ciência de Dados para problemas de bem-estar social.\nEstruturação metodológica de projetos de Ciência de Dados: contextualização, teorização, enquadramento analítico, modelagem, engenharia, experimentação. Aplicações em bem-estar social e interesse\npúblico: saúde, segurança pública, justiça, desenvolvimento econômico, serviços sociais, transparência governamental, trabalho, educação, meio ambiente, desastres, energia, transporte, infraestrutura.",
+  "PreRequisitos": "Ciência de Dados "
+ },
+ {
+  "Codigo": "TIN0150\r",
+  "Nome": "Ambiente\nOperacional\nUNIX",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Interpretadores de comandos (C-shell, Bourne shell), criação de\nscripts de comandos e programas. Principais utilitários do sistema.\nProcessos e comunicação entre eles.\r"
+ },
+ {
+  "Codigo": "TMP0094",
+  "Nome": "Automação",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Automação, Robótica Básica e Internet das Coisas",
+  "PreRequisitos": "Redes de Computadores"
+ },
+ {
+  "Codigo": "TMP0095",
+  "Nome": "Ferramentas de\nModelagem e\nSimulação para\nAvaliação de\nDesempenho",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Parâmetros usados na modelagem de sistemas. Ferramentas de modelagem e de simulação. Avaliação de desempenho dos modelos.\nEstudo de casos.",
+  "PreRequisitos": "Probabilidade,\nRedes de\nComputadores"
+ },
+ {
+  "Codigo": "TMP0096",
+  "Nome": "Gerenciamento\nde Redes e\nServiços",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Configuração de serviços básicos de rede. Arquitetura e protocolos de\ngerenciamento de redes e serviços. Ferramentas de monitoramento e\nanálise. Boas práticas de gerenciamento de redes e serviços. Tópicos\navançados.",
+  "PreRequisitos": "Redes de\nComputadores"
+ },
+ {
+  "Codigo": "TMP0097",
+  "Nome": "Modelos de\nSistemas de\nComputação e\nComunicação",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Probabilidade e estatística. Variáveis aleatórias. Medidas de inte- resse. Intervalo de confiança. Simulação. Teoria de filas.",
+  "PreRequisitos": "Probabilidade, Redes de Computadores"
+ },
+ {
+  "Codigo": "TMP0098",
+  "Nome": "Redes Móveis e\nComputação\nUbíqua",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Introdução à transmissão sem fio. Tipos de redes sem fio: WLAN e\nWPAN. Rede celular 2G, 3G e 4G. Rede oportunista e D2D. Internet\ndas coisas. Rede veicular. Introdução à computação móvel e ubíqua.\nDesenvolvimento de projeto de uma rede e de uma aplicação móvel.",
+  "PreRequisitos": "Redes de\nComputadores"
+ },
+ {
+  "Codigo": "TMP0099",
+  "Nome": "Segurança de\nTecnologia da\nInformação",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Conceitos básicos de segurança. Segurança nas camadas de aplicação, transporte e rede. Segurança em redes sem fio. Ataques e\ncontramedidas. Segurança de redes e serviços.",
+  "PreRequisitos": "Redes de\nComputadores"
+ },
+ {
+  "Codigo": "TMP0100",
+  "Nome": "Serviços de\nRede e\nMultimídia",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Desenvolvimento de aplicações e serviços de rede. Aplicações multi- mídia. Garantia de desempenho na rede. Distribuição de conteúdo. ",
+  "PreRequisitos": "Redes de\nComputadores"
+ },
+ {
+  "Codigo": "TMP0101",
+  "Nome": "Simulação\nEstocástica",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Fundamentos de simulação computacional. Geração de números\npseudo-aleatórios. Simulação de eventos discretos. Análise estatística de dados simulados. Métodos de Monte Carlo por cadeias de\nMarkov.",
+  "PreRequisitos": "Estruturas de Dados,\nProbabilidade,\nRedes de\nComputadores"
+ },
+ {
+  "Codigo": "TMP0102",
+  "Nome": "Sistemas\nDistribuídos",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Conceitos básicos de sistemas distribuídos. Revisão de processos e\nthreads. Arquiteturas para sistemas distribuídos. Comunicação e sincronização, algoritmos de coordenação. Consistência e estado global.\nTópicos avançados.",
+  "PreRequisitos": "Redes de\nComputadores"
+ },
+ {
+  "Codigo": "HDI0164",
+  "Nome": "Culturas\nAfro-Brasileiras\nem Sala de Aula",
+  "CargaHoraria": 30,
+  "Creditos": 2,
+  "Ementa": "Diversidade Étnico-Racial na Escola de Ensino Fundamental. Diáspora Negra. Civilizações africanas. Africanos no Brasil: origem e\ncontribuições. Movimento negro. Quilombos: história, organização\ne cultura. Lei 10639\/2003: texto e contexto. Africanidade e Religiosidade. Culturas Afro-brasileiras Contemporâneas. Dimensões do\nEnsino da Cultura Afro-Brasileira."
+ },
+ {
+  "Codigo": "SER0012",
+  "Nome": "Educação\nAmbiental e\nCidadania",
+  "CargaHoraria": 45,
+  "Creditos": 2,
+  "Ementa": "Estudo de questões educacionais relativas ao meio ambiente, considerando a inter-relação homem-natureza, especificamente no que se\nrefere ao ambiente de vida das pessoas, dentro de uma abordagem\ninter e multidisciplinar dos aspectos: político, ético, econômico, social,\necológico, evolutivo, histórico, cultural, etc."
+ },
+ {
+  "Codigo": "HDI0142",
+  "Nome": "Língua Brasileira de Sinais",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Língua Brasileira de Sinais e suas singularidades lingüísticas. Vivência da LIBRAS a partir do contato direto com um(a) professor(a)\nsurdo(a). Implicações do Decreto n° 5.626 para a prática escolar e\nformação do(a) professor(a)."
+ },
+ {
+  "Codigo": "TIN0151",
+  "Nome": "Formação Complementar I",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Disciplina para validação de creditação de formação complementar\nobrigatória, fora da área de computação, obtida por aprovação em\ndisciplina cursada em outra IES."
+ },
+ {
+  "Codigo": "TIN0152",
+  "Nome": "Formação Complementar II",
+  "CargaHoraria": 60,
+  "Creditos": 4,
+  "Ementa": "Disciplina para validação de creditação de formação complementar\nobrigatória, fora da área de computação, obtida por aprovação em\ndisciplina cursada em outra IES.\r"
+ },
+ {
+  "Codigo": "TMP0103",
+  "Nome": "Atividades de Extensão I",
+  "CargaHoraria": 150,
+  "Creditos": 5,
+  "Ementa": "Disciplina para validação de creditação de atividades de extensão através da participação em programas\/projetos de extensão."
+ },
+ {
+  "Codigo": "TMP0104",
+  "Nome": "Atividades de Extensão II ",
+  "CargaHoraria": 150,
+  "Creditos": 5,
+  "Ementa": "Disciplina para validação de creditação de atividades de extensão através da participação em programas\/projetos de extensão."
+ }
+]
+}
