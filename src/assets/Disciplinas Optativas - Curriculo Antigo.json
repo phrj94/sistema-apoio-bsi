@@ -6,7 +6,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Administração de dados. Administração de Banco de Dados. Projeto e implementação de uma base de dados relacional, em ambiente cliente-servidor, utilizando SGBD. Importação e exportação de dados. Estudo dos planos de acesso gerados pelas consultas. Otimização de consultas. Uso de índices. Gerenciamento de espaço em disco. Tuning. Cópia e recuperação da base de dados.",
-     "PreRequisitos": "TIN0169"
+     "PreRequisitos": "TIN0169",
+     "Sigla": "ADM BD"
     },
     {
      "Codigo": "TIN0144",
@@ -14,26 +15,30 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Problemas de otimização combinatória. Programação Dinâmica. Algoritmos Gulosos. Branch&bound.e A*. Heurísticas e metaheurísticas. Simulated annealing, busca tabu, algoritmos genéticos, GRASP e VNS.",
-     "PreRequisitos": "TIN0118"
+     "PreRequisitos": "TIN0118",
+     "Sigla": "APC"
     },
     {
      "Codigo": "TIN0150",
      "Nome": "Ambiente Operacional UNIX",
      "CargaHoraria": 60,
      "Creditos": 4,
-     "Ementa": "Interpretadores de comandos (C-shell, Bourne Shell), criação de scripts de comandos e programas. Principais utilitários do sistema. Processos e comunicação entre eles."
+     "Ementa": "Interpretadores de comandos (C-shell, Bourne Shell), criação de scripts de comandos e programas. Principais utilitários do sistema. Processos e comunicação entre eles.",
+     "Sigla": "AOU"
     },
     {
      "Codigo": "TIN0146",
      "Nome": "Compiladores",
      "CargaHoraria": 60,
-     "Creditos": 4
+     "Creditos": 4,
+     "Sigla": "COMP"
     },
     {
      "Codigo": "TIN0149",
      "Nome": "Computação Gráfica",
      "CargaHoraria": 60,
-     "Creditos": 4
+     "Creditos": 4,
+     "Sigla":"CG"
     },
     {
      "Codigo": "TIN0138",
@@ -41,7 +46,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Introdução à segurança de dados. Ameaças e Contramedidas. Criptografia I. Protocolos I. Protocolos II. Segurança na Internet. Email e Segurança na Web. Criptografia II. Criptografia III. Programando com Segurança.",
-     "PreRequisitos": "TIN0123"
+     "PreRequisitos": "TIN0123",
+     "Sigla":"CSD"
     },
     {
      "Codigo": "TIN0158",
@@ -49,13 +55,15 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Aplicações baseadas na web. Processo de engenharia para web. Análise e projeto de aplicações baseadas na web. Tecnologias de construção de aplicações para web. Testes de aplicações baseadas na web. Gestão de projetos de desenvolvimento para web.",
-     "PreRequisitos": "TIN0169"
+     "PreRequisitos": "TIN0169",
+     "Sigla": "DSW"
     },
     {
      "Codigo": "TIN0143",
      "Nome": "Fluxos em Redes",
      "CargaHoraria": 60,
-     "Creditos": 4
+     "Creditos": 4,
+     "Sigla":"FR"
     },
     {
      "Codigo": "TIN0147",
@@ -63,7 +71,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Revisão de Lógica Proposicional e de Predicados. Programação em Lógica e Prolog. Resolução Automática. Lógica Descritiva. Noções de tópicos avançados de Representação de Conhecimento e Raciocínio.",
-     "PreRequisitos": "TIN0105"
+     "PreRequisitos": "TIN0105",
+     "Sigla": "FRCR"
     },
     {
      "Codigo": "TIN0136",
@@ -71,7 +80,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Sistemas de Gerência de Bancos de Dados Distribuídos (SGBDD). Processamento paralelo em sistemas de banco de dados. Análise dos principais sistemas de banco de dados distribuídos e paralelos. Tendências atuais de gerência de dados em ambientes distribuídos e paralelos.",
-     "PreRequisitos": "TIN0125"
+     "PreRequisitos": "TIN0125",
+     "Sigla": "GDADP"
     },
     {
      "Codigo": "TIN0160",
@@ -79,14 +89,16 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Organizações e Processos. Conceito de Processo. Objetivos da Modelagem de Processos. Método para Modelagem de Processos. Metamodelos (BPMN). Ferramentas para Modelagem de Processos. Derivação de Requisitos de Sistemas. Sistemas Workflow. Projeto da Arquitetura de Informações da Organização. Controle e acompanhamento de processos de negócios.",
-     "PreRequisitos": "TIN0171"
+     "PreRequisitos": "TIN0171",
+     "Sigla": "GPN"
     },
     {
      "Codigo": "TIN0128",
      "Nome": "Informática na Educação",
      "CargaHoraria": 60,
      "Creditos": 4,
-     "Ementa": "Histórico, evolução e tendências. Teorias de Aprendizagem e Métodos Educacionais. Sistemas computacionais voltados para a educação (Tutoriais (CAI), Software educacional, Jogos, Simuladores, Editores, Tecnologias da Informação e Comunicação (TICs). Educação a Distância (EAD), Redes Sociais."
+     "Ementa": "Histórico, evolução e tendências. Teorias de Aprendizagem e Métodos Educacionais. Sistemas computacionais voltados para a educação (Tutoriais (CAI), Software educacional, Jogos, Simuladores, Editores, Tecnologias da Informação e Comunicação (TICs). Educação a Distância (EAD), Redes Sociais.",
+     "Sigla": "INFO EDUC"
     },
     {
      "Codigo": "TIN0172",
@@ -94,14 +106,16 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Agentes inteligentes. Busca e busca heurística. Sistemas Baseados em Conhecimento. Problemas de Satisfação de Restrições. Planejamento. Redes Bayesianas. Redes Neurais. Algoritmos genéticos",
-     "PreRequisitos": "TIN0105, TIN0168"
+     "PreRequisitos": "TIN0105, TIN0168",
+     "Sigla": "IA"
     },
     {
      "Codigo": "TIN0142",
      "Nome": "Programação Linear",
      "CargaHoraria": 60,
      "Creditos": 4,
-     "PreRequisitos": "TIN0118"
+     "PreRequisitos": "TIN0118",
+     "Sigla": "PL"
     },
     {
      "Codigo": "TIN0159",
@@ -109,13 +123,15 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Importância do Trabalho em Grupo. Conceitos – CSCW e Groupware. Histórico da área. Principais aplicações. Aspectos de suporte à colaboração (coordenação, percepção, comunicação, memória de grupo). Sistemas de Apoio a Reuniões. Sistemas de Gerenciamento de Fluxo de Trabalho (workflow). Aprendizado Cooperativo Apoiado por Computador. Uso de Groupware em Organizações. Memória Organizacional. Aspectos de implementação de groupware.",
-     "PreRequisitos": "TIN0171"
+     "PreRequisitos": "TIN0171",
+     "Sigla": "SC"
     },
     {
      "Codigo": "TIN0148",
      "Nome": "Sistemas Multimídia",
      "CargaHoraria": 60,
-     "Creditos": 4
+     "Creditos": 4,
+     "Sigla": "SM"
     },
     {
      "Codigo": "TIN0145",
@@ -123,7 +139,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Tópicos selecionados sobre o estado da arte na área de Algoritmos",
-     "PreRequisitos": "TIN0118"
+     "PreRequisitos": "TIN0118",
+     "Sigla":"TAA I"
     },
     {
      "Codigo": "TIN0137",
@@ -131,7 +148,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Tópicos selecionados sobre o estado da arte na área de Bancos de Dados.",
-     "PreRequisitos": "TIN0169"
+     "PreRequisitos": "TIN0169",
+     "Sigla": "TABD I"
     },
     {
      "Codigo": "TIN0162",
@@ -139,7 +157,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Tópicos selecionados sobre o estado da arte na área de Bancos de Dados.",
-     "PreRequisitos": "TIN0169"
+     "PreRequisitos": "TIN0169",
+     "Sigla": "TABD II"
     },
     {
      "Codigo": "TIN0163",
@@ -147,7 +166,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Tópicos selecionados sobre o estado da arte na área de Bancos de Dados.",
-     "PreRequisitos": "TIN0169"
+     "PreRequisitos": "TIN0169",
+     "Sigla": "TABD III"
     },
     {
      "Codigo": "TIN0161",
@@ -155,7 +175,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Tópicos selecionados sobre o estado da arte na área de Engenharia de Software.",
-     "PreRequisitos": "TIN0171"
+     "PreRequisitos": "TIN0171",
+     "Sigla": "TAES I"
     },
     {
      "Codigo": "TIN0166",
@@ -163,7 +184,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Tópicos selecionados sobre o estado da arte na área de Engenharia de Software.",
-     "PreRequisitos": "TIN0171"
+     "PreRequisitos": "TIN0171",
+     "Sigla":"TAES II"
     },
     {
      "Codigo": "TIN0141",
@@ -171,7 +193,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Tópicos selecionados sobre o estado da arte na área de Redes de Computadores.",
-     "PreRequisitos": "TIN0126"
+     "PreRequisitos": "TIN0126",
+     "Sigla": "TARC I"
     },
     {
      "Codigo": "TIN0164",
@@ -179,7 +202,8 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Tópicos selecionados sobre o estado da arte na área de Redes de Computadores.",
-     "PreRequisitos": "TIN0126"
+     "PreRequisitos": "TIN0126",
+     "Sigla":"TARC II"
     },
     {
      "Codigo": "TIN0165",
@@ -187,25 +211,29 @@
      "CargaHoraria": 60,
      "Creditos": 4,
      "Ementa": "Tópicos selecionados sobre o estado da arte na área de Redes de Computadores.",
-     "PreRequisitos": "TIN0126"
+     "PreRequisitos": "TIN0126",
+     "Sigla":"TARC III"
     },
     {
      "Codigo": "HDI0164",
-     "Nome": "Culturas\nAfro-Brasileiras em\nSala de Aula",
+     "Nome": "Culturas Afro-Brasileiras em Sala de Aula",
      "CargaHoraria": 30,
-     "Creditos": 2
+     "Creditos": 2,
+     "Sigla": "CAB"
     },
     {
      "Codigo": "SER0012",
-     "Nome": "Educação\nAmbiental e\nCidadania",
+     "Nome": "Educação Ambiental e Cidadania",
      "CargaHoraria": 45,
-     "Creditos": 2
+     "Creditos": 2,
+     "Sigla": "EAC"
     },
     {
      "Codigo": "HDI0142",
      "Nome": "Língua Brasileira de Sinais",
      "CargaHoraria": 60,
-     "Creditos": 4
+     "Creditos": 4,
+     "Sigla":"LIBRAS"
     }
    ]
 }   

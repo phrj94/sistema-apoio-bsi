@@ -28,9 +28,9 @@ fastify.get('/', function (request, reply) {
 fastify.post('/upload', async (req, reply) => {
     const data = await req.file()
     await pump(data.file, fs.createWriteStream(data.filename))
-    const subjects = await readPdf(data.filename);
+    const disciplinas = await readPdf(data.filename);
 
-    reply.send({ subjects })
+    reply.send({ disciplinas })
 })
 
 // Run the server!

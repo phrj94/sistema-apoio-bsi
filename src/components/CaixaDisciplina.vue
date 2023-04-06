@@ -1,5 +1,5 @@
 <template>
-    <v-card class="pa-2 largura-caixa" :color="corFundoCartao">
+    <v-card class="pa-2 largura-caixa" :color="cor">
         <v-card-title>{{ disciplina.Sigla }}</v-card-title>
         <v-card-subtitle>{{ disciplina.codigo }}</v-card-subtitle>
         <!-- <v-card-actions>
@@ -16,13 +16,13 @@ export default {
             required: true,
             default: () => { }
         },
-        status: { type: String, default: () => '' }
+        cor: { type: String, default: () => '' }
     },
     computed: {
         corFundoCartao() {
             if (this.status === 'REP') return 'red';
             else if (this.status === 'APV') return 'green';
-            else return '#F5F5F5';
+            else return ;
         }
     }
 }
