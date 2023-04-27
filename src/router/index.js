@@ -3,6 +3,7 @@ import PaginaInicial from '../views/PaginaInicial.vue'
 import Exemplo from '../views/exemplosVue/Exemplo.vue'
 import Historico from '../views/Historico.vue'
 import DisciplinasCurriculoAntigo from '../views/DisciplinasCurriculoAntigo.vue'
+import DisciplinasCurriculoNovo from '../views/DisciplinasCurriculoNovo.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -20,6 +21,10 @@ const router = createRouter({
       path: '/curriculo-antigo',
       name: 'curriculo-antigo',
       component: DisciplinasCurriculoAntigo
+    },
+    { path: '/curriculo-novo',
+      name: 'curriculo-novo',
+      component: DisciplinasCurriculoNovo
     },
     {
       path: '/exemplo',

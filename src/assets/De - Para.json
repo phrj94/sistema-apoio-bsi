@@ -1,435 +1,435 @@
-{"De - Para":[
+{"De-Para":[
  {
-  "Código currículo antigo": "TIN0117",
-  "Nome currículo antigo": "Administração Financeira",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0117",
+  "nomeCurriculoAntigo": "Administração Financeira",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TME0015",
-  "Nome currículo antigo": "Álgebra Linear",
-  "Código currículo novo": "TMP0008",
-  "Nome currículo novo": "Álgebra Linear"
+  "codigoCurriculoAntigo": "TME0015",
+  "nomeCurriculoAntigo": "Álgebra Linear",
+  "codigoCurriculoNovo": "TMP0008",
+  "nomeCurriculoNovo": "Álgebra Linear"
  },
  {
-  "Código currículo antigo": "TIN0118",
-  "Nome currículo antigo": "Análise de Algoritmos",
-  "Código currículo novo": "TMP0022",
-  "Nome currículo novo": "Projeto e Análise\nde Algoritmos"
+  "codigoCurriculoAntigo": "TIN0118",
+  "nomeCurriculoAntigo": "Análise de Algoritmos",
+  "codigoCurriculoNovo": "TMP0022",
+  "nomeCurriculoNovo": "Projeto e Análise\nde Algoritmos"
  },
  {
-  "Código currículo antigo": "TIN0108",
-  "Nome currículo antigo": "Análise de Sistemas",
-  "Código currículo novo": "TMP0023",
-  "Nome currículo novo": "Análise e Projeto\nde Sistemas"
+  "codigoCurriculoAntigo": "TIN0108",
+  "nomeCurriculoAntigo": "Análise de Sistemas",
+  "codigoCurriculoNovo": "TMP0023",
+  "nomeCurriculoNovo": "Análise e Projeto\nde Sistemas"
  },
  {
-  "Código currículo antigo": "TIN0013",
-  "Nome currículo antigo": "Análise Empresarial e Administrativa",
-  "Código currículo novo": "TMP0013",
-  "Nome currículo novo": "Fundamentos de\nGestão\nOrganizacional"
+  "codigoCurriculoAntigo": "TIN0013",
+  "nomeCurriculoAntigo": "Análise Empresarial e Administrativa",
+  "codigoCurriculoNovo": "TMP0013",
+  "nomeCurriculoNovo": "Fundamentos de\nGestão\nOrganizacional"
  },
  {
-  "Código currículo antigo": "TIN0120",
-  "Nome currículo antigo": "Bancos de Dados I",
-  "Código currículo novo": "TMP0027",
-  "Nome currículo novo": "Modelagem da\nInformação"
+  "codigoCurriculoAntigo": "TIN0120",
+  "nomeCurriculoAntigo": "Bancos de Dados I",
+  "codigoCurriculoNovo": "TMP0027",
+  "nomeCurriculoNovo": "Modelagem da\nInformação"
  },
  {
-  "Código currículo antigo": "TIN0169",
-  "Nome currículo antigo": "Bancos de Dados II",
-  "Código currículo novo": "TMP0028",
-  "Nome currículo novo": "Armazenamento e\nGestão de Dados"
+  "codigoCurriculoAntigo": "TIN0169",
+  "nomeCurriculoAntigo": "Bancos de Dados II",
+  "codigoCurriculoNovo": "TMP0028",
+  "nomeCurriculoNovo": "Armazenamento e\nGestão de Dados"
  },
  {
-  "Código currículo antigo": "TME0112",
-  "Nome currículo antigo": "Cálculo Diferencial e Integral I",
-  "Código currículo novo": "TMP0009",
-  "Nome currículo novo": "Cálculo Diferencial\ne Integral I"
+  "codigoCurriculoAntigo": "TME0112",
+  "nomeCurriculoAntigo": "Cálculo Diferencial e Integral I",
+  "codigoCurriculoNovo": "TMP0009",
+  "nomeCurriculoNovo": "Cálculo Diferencial\ne Integral I"
  },
  {
-  "Código currículo antigo": "TME0113",
-  "Nome currículo antigo": "Cálculo Diferencial e Integral II",
-  "Código currículo novo": "TMP0010",
-  "Nome currículo novo": "Cálculo Diferencial\ne Integral II"
+  "codigoCurriculoAntigo": "TME0113",
+  "nomeCurriculoAntigo": "Cálculo Diferencial e Integral II",
+  "codigoCurriculoNovo": "TMP0010",
+  "nomeCurriculoNovo": "Cálculo Diferencial\ne Integral II"
  },
  {
-  "Código currículo antigo": "TIN0106",
-  "Nome currículo antigo": "Desenvolvimento de Páginas WEB",
-  "Código currículo novo": "TIN0106",
-  "Nome currículo novo": "Desenvolvimento de páginas web"
+  "codigoCurriculoAntigo": "TIN0106",
+  "nomeCurriculoAntigo": "Desenvolvimento de Páginas WEB",
+  "codigoCurriculoNovo": "TIN0106",
+  "nomeCurriculoNovo": "Desenvolvimento de páginas web"
  },
  {
-  "Código currículo antigo": "TIN0130",
-  "Nome currículo antigo": "Empreendedorismo",
-  "Código currículo novo": "TMP0016",
-  "Nome currículo novo": "Empreendedorismo\ne Inovação"
+  "codigoCurriculoAntigo": "TIN0130",
+  "nomeCurriculoAntigo": "Empreendedorismo",
+  "codigoCurriculoNovo": "TMP0016",
+  "nomeCurriculoNovo": "Empreendedorismo\ne Inovação"
  },
  {
-  "Código currículo antigo": "TME0115",
-  "Nome currículo antigo": "Estatística",
-  "Código currículo novo": "TMP0012",
-  "Nome currículo novo": "Estatística"
+  "codigoCurriculoAntigo": "TME0115",
+  "nomeCurriculoAntigo": "Estatística",
+  "codigoCurriculoNovo": "TMP0012",
+  "nomeCurriculoNovo": "Estatística"
  },
  {
-  "Código currículo antigo": "TIN0114",
-  "Nome currículo antigo": "Estruturas de Dados I",
-  "Código currículo novo": "TMP0020",
-  "Nome currículo novo": "Estruturas de Dados"
+  "codigoCurriculoAntigo": "TIN0114",
+  "nomeCurriculoAntigo": "Estruturas de Dados I",
+  "codigoCurriculoNovo": "TMP0020",
+  "nomeCurriculoNovo": "Estruturas de Dados"
  },
  {
-  "Código currículo antigo": "TIN0168",
-  "Nome currículo antigo": "Estrutura de Dados II",
-  "Código currículo novo": "TMP0053",
-  "Nome currículo novo": "Estruturas de\nDados\nAvançadas"
+  "codigoCurriculoAntigo": "TIN0168",
+  "nomeCurriculoAntigo": "Estrutura de Dados II",
+  "codigoCurriculoNovo": "TMP0053",
+  "nomeCurriculoNovo": "Estruturas de\nDados\nAvançadas"
  },
  {
-  "Código currículo antigo": "TIN0109",
-  "Nome currículo antigo": "Estruturas Discretas",
-  "Código currículo novo": "TMP0054",
-  "Nome currículo novo": "Estruturas\nDiscretas com\nAlgoritmos"
+  "codigoCurriculoAntigo": "TIN0109",
+  "nomeCurriculoAntigo": "Estruturas Discretas",
+  "codigoCurriculoNovo": "TMP0054",
+  "nomeCurriculoNovo": "Estruturas\nDiscretas com\nAlgoritmos"
  },
  {
-  "Código currículo antigo": "TIN0112",
-  "Nome currículo antigo": "Fundamentos de Sistemas de Informação",
-  "Código currículo novo": "TMP0001",
-  "Nome currículo novo": "Fundamentos de\nSistemas de\nInformação"
+  "codigoCurriculoAntigo": "TIN0112",
+  "nomeCurriculoAntigo": "Fundamentos de Sistemas de Informação",
+  "codigoCurriculoNovo": "TMP0001",
+  "nomeCurriculoNovo": "Fundamentos de\nSistemas de\nInformação"
  },
  {
-  "Código currículo antigo": "TIN0132",
-  "Nome currículo antigo": "Gerência de Projetos de Informática",
-  "Código currículo novo": "TMP0026",
-  "Nome currículo novo": "Gerência de\nProjetos"
+  "codigoCurriculoAntigo": "TIN0132",
+  "nomeCurriculoAntigo": "Gerência de Projetos de Informática",
+  "codigoCurriculoNovo": "TMP0026",
+  "nomeCurriculoNovo": "Gerência de\nProjetos"
  },
  {
-  "Código currículo antigo": "TIN0110",
-  "Nome currículo antigo": "Interação Humano-Computador",
-  "Código currículo novo": "TMP0003",
-  "Nome currículo novo": "Interação Humano-Computador"
+  "codigoCurriculoAntigo": "TIN0110",
+  "nomeCurriculoAntigo": "Interação Humano-Computador",
+  "codigoCurriculoNovo": "TMP0003",
+  "nomeCurriculoNovo": "Interação Humano-Computador"
  },
  {
-  "Código currículo antigo": "TIN0105",
-  "Nome currículo antigo": "Introdução à Lógica Computacional",
-  "Código currículo novo": "TMP0018",
-  "Nome currículo novo": "Introdução à Lógica\nComputacional"
+  "codigoCurriculoAntigo": "TIN0105",
+  "nomeCurriculoAntigo": "Introdução à Lógica Computacional",
+  "codigoCurriculoNovo": "TMP0018",
+  "nomeCurriculoNovo": "Introdução à Lógica\nComputacional"
  },
  {
-  "Código currículo antigo": "TIN0119",
-  "Nome currículo antigo": "Linguagens Formais e Autômatos",
-  "Código currículo novo": "TMP0021",
-  "Nome currículo novo": "Linguagens e\nParadigmas de\nProgramação"
+  "codigoCurriculoAntigo": "TIN0119",
+  "nomeCurriculoAntigo": "Linguagens Formais e Autômatos",
+  "codigoCurriculoNovo": "TMP0021",
+  "nomeCurriculoNovo": "Linguagens e\nParadigmas de\nProgramação"
  },
  {
-  "Código currículo antigo": "TME0011",
-  "Nome currículo antigo": "Matemática Básica",
-  "Código currículo novo": "TMP0007",
-  "Nome currículo novo": "Fundamentos de\nCálculo"
+  "codigoCurriculoAntigo": "TME0011",
+  "nomeCurriculoAntigo": "Matemática Básica",
+  "codigoCurriculoNovo": "TMP0007",
+  "nomeCurriculoNovo": "Fundamentos de\nCálculo"
  },
  {
-  "Código currículo antigo": "TIN0108",
-  "Nome currículo antigo": "Organização de Computadores",
-  "Código currículo novo": "TMP0030",
-  "Nome currículo novo": "Arquitetura de\nComputadores"
+  "codigoCurriculoAntigo": "TIN0108",
+  "nomeCurriculoAntigo": "Organização de Computadores",
+  "codigoCurriculoNovo": "TMP0030",
+  "nomeCurriculoNovo": "Arquitetura de\nComputadores"
  },
  {
-  "Código currículo antigo": "TME0114",
-  "Nome currículo antigo": "Probabilidade",
-  "Código currículo novo": "TMP0011",
-  "Nome currículo novo": "Probabilidade"
+  "codigoCurriculoAntigo": "TME0114",
+  "nomeCurriculoAntigo": "Probabilidade",
+  "codigoCurriculoNovo": "TMP0011",
+  "nomeCurriculoNovo": "Probabilidade"
  },
  {
-  "Código currículo antigo": "TIN0122",
-  "Nome currículo antigo": "Processos de Software",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0122",
+  "nomeCurriculoAntigo": "Processos de Software",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0121",
-  "Nome currículo antigo": "Programação Modular",
-  "Código currículo novo": "TMP0025",
-  "Nome currículo novo": "Engenharia de\nSoftware II"
+  "codigoCurriculoAntigo": "TIN0121",
+  "nomeCurriculoAntigo": "Programação Modular",
+  "codigoCurriculoNovo": "TMP0025",
+  "nomeCurriculoNovo": "Engenharia de\nSoftware II"
  },
  {
-  "Código currículo antigo": "TIN0131",
-  "Nome currículo antigo": "Projeto de Graduação I",
-  "Código currículo novo": "TMP0033",
-  "Nome currículo novo": "Projeto de Graduação 1"
+  "codigoCurriculoAntigo": "TIN0131",
+  "nomeCurriculoAntigo": "Projeto de Graduação I",
+  "codigoCurriculoNovo": "TMP0033",
+  "nomeCurriculoNovo": "Projeto de Graduação 1"
  },
  {
-  "Código currículo antigo": "TIN0133",
-  "Nome currículo antigo": "Projeto de Graduação II",
-  "Código currículo novo": "TMP0034",
-  "Nome currículo novo": "Projeto de Graduação 2"
+  "codigoCurriculoAntigo": "TIN0133",
+  "nomeCurriculoAntigo": "Projeto de Graduação II",
+  "codigoCurriculoNovo": "TMP0034",
+  "nomeCurriculoNovo": "Projeto de Graduação 2"
  },
  {
-  "Código currículo antigo": "TIN0171",
-  "Nome currículo antigo": "Projeto e Construção de Sistemas",
-  "Código currículo novo": "TMP0024",
-  "Nome currículo novo": "Engenharia de\nSoftware I"
+  "codigoCurriculoAntigo": "TIN0171",
+  "nomeCurriculoAntigo": "Projeto e Construção de Sistemas",
+  "codigoCurriculoNovo": "TMP0024",
+  "nomeCurriculoNovo": "Engenharia de\nSoftware I"
  },
  {
-  "Código currículo antigo": "TIN0125",
-  "Nome currículo antigo": "Projeto e Construção de Sistemas com SGBD",
-  "Código currículo novo": "TMP0005",
-  "Nome currículo novo": "Projeto Integrador II"
+  "codigoCurriculoAntigo": "TIN0125",
+  "nomeCurriculoAntigo": "Projeto e Construção de Sistemas com SGBD",
+  "codigoCurriculoNovo": "TMP0005",
+  "nomeCurriculoNovo": "Projeto Integrador II"
  },
  {
-  "Código currículo antigo": "TIN0123",
-  "Nome currículo antigo": "Redes de Computadores I",
-  "Código currículo novo": "TMP0032",
-  "Nome currículo novo": "Redes de\nComputadores"
+  "codigoCurriculoAntigo": "TIN0123",
+  "nomeCurriculoAntigo": "Redes de Computadores I",
+  "codigoCurriculoNovo": "TMP0032",
+  "nomeCurriculoNovo": "Redes de\nComputadores"
  },
  {
-  "Código currículo antigo": "TIN0126",
-  "Nome currículo antigo": "Redes de Computadores II",
-  "Código currículo novo": "TMP0098",
-  "Nome currículo novo": "Redes Móveis e\nComputação\nUbíqua"
+  "codigoCurriculoAntigo": "TIN0126",
+  "nomeCurriculoAntigo": "Redes de Computadores II",
+  "codigoCurriculoNovo": "TMP0098",
+  "nomeCurriculoNovo": "Redes Móveis e\nComputação\nUbíqua"
  },
  {
-  "Código currículo antigo": "TIN0116",
-  "Nome currículo antigo": "Sistemas Operacionais",
-  "Código currículo novo": "TMP0031",
-  "Nome currículo novo": "Sistemas\nOperacionais"
+  "codigoCurriculoAntigo": "TIN0116",
+  "nomeCurriculoAntigo": "Sistemas Operacionais",
+  "codigoCurriculoNovo": "TMP0031",
+  "nomeCurriculoNovo": "Sistemas\nOperacionais"
  },
  {
-  "Código currículo antigo": "TIN0107",
-  "Nome currículo antigo": "Técnicas de Programação I",
-  "Código currículo novo": "TMP0017",
-  "Nome currículo novo": "Algoritmos e\nProgramação"
+  "codigoCurriculoAntigo": "TIN0107",
+  "nomeCurriculoAntigo": "Técnicas de Programação I",
+  "codigoCurriculoNovo": "TMP0017",
+  "nomeCurriculoNovo": "Algoritmos e\nProgramação"
  },
  {
-  "Código currículo antigo": "TIN0107",
-  "Nome currículo antigo": "Técnicas de Programação I",
-  "Código currículo novo": "TMP0004",
-  "Nome currículo novo": "Projeto Integrador I"
+  "codigoCurriculoAntigo": "TIN0107",
+  "nomeCurriculoAntigo": "Técnicas de Programação I",
+  "codigoCurriculoNovo": "TMP0004",
+  "nomeCurriculoNovo": "Projeto Integrador I"
  },
  {
-  "Código currículo antigo": "TIN0011",
-  "Nome currículo antigo": "Técnicas de Programação II",
-  "Código currículo novo": "TMP0019",
-  "Nome currículo novo": "Técnicas de\nProgramação"
+  "codigoCurriculoAntigo": "TIN0011",
+  "nomeCurriculoAntigo": "Técnicas de Programação II",
+  "codigoCurriculoNovo": "TMP0019",
+  "nomeCurriculoNovo": "Técnicas de\nProgramação"
  },
  {
-  "Código currículo antigo": "HTD0058",
-  "Nome currículo antigo": "Teorias e Práticas Discursivas",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "HTD0058",
+  "nomeCurriculoAntigo": "Teorias e Práticas Discursivas",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0054",
-  "Nome currículo antigo": "Atividades Curriculares de Extensão 1",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0054",
+  "nomeCurriculoAntigo": "Atividades Curriculares de Extensão 1",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0055",
-  "Nome currículo antigo": "Atividades Curriculares de Extensão 2",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0055",
+  "nomeCurriculoAntigo": "Atividades Curriculares de Extensão 2",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0056",
-  "Nome currículo antigo": "Atividades Curriculares de Extensão 3",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0056",
+  "nomeCurriculoAntigo": "Atividades Curriculares de Extensão 3",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0057",
-  "Nome currículo antigo": "Atividades Curriculares de Extensão 4",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0057",
+  "nomeCurriculoAntigo": "Atividades Curriculares de Extensão 4",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0151",
-  "Nome currículo antigo": "Formação Complementar 1",
-  "Código currículo novo": "TIN0151",
-  "Nome currículo novo": "Formação Complementar I"
+  "codigoCurriculoAntigo": "TIN0151",
+  "nomeCurriculoAntigo": "Formação Complementar 1",
+  "codigoCurriculoNovo": "TIN0151",
+  "nomeCurriculoNovo": "Formação Complementar I"
  },
  {
-  "Código currículo antigo": "TIN0152",
-  "Nome currículo antigo": "Formação Complementar 2",
-  "Código currículo novo": "TIN0152",
-  "Nome currículo novo": "Formação Complementar II"
+  "codigoCurriculoAntigo": "TIN0152",
+  "nomeCurriculoAntigo": "Formação Complementar 2",
+  "codigoCurriculoNovo": "TIN0152",
+  "nomeCurriculoNovo": "Formação Complementar II"
  },
  {
-  "Código currículo antigo": "TIN0153",
-  "Nome currículo antigo": "Formação Complementar 3",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0153",
+  "nomeCurriculoAntigo": "Formação Complementar 3",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0154",
-  "Nome currículo antigo": "Formação Complementar 4",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0154",
+  "nomeCurriculoAntigo": "Formação Complementar 4",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0135",
-  "Nome currículo antigo": "Administração de Bancos de Dados",
-  "Código currículo novo": "TIN0135",
-  "Nome currículo novo": "Administração\nde Banco de\nDados"
+  "codigoCurriculoAntigo": "TIN0135",
+  "nomeCurriculoAntigo": "Administração de Bancos de Dados",
+  "codigoCurriculoNovo": "TIN0135",
+  "nomeCurriculoNovo": "Administração\nde Banco de\nDados"
  },
  {
-  "Código currículo antigo": "TIN0144",
-  "Nome currículo antigo": "Algoritmos para Problemas Combinatórios",
-  "Código currículo novo": "TIN0144",
-  "Nome currículo novo": "Algoritmos para Problemas Combinatórios"
+  "codigoCurriculoAntigo": "TIN0144",
+  "nomeCurriculoAntigo": "Algoritmos para Problemas Combinatórios",
+  "codigoCurriculoNovo": "TIN0144",
+  "nomeCurriculoNovo": "Algoritmos para Problemas Combinatórios"
  },
  {
-  "Código currículo antigo": "TIN0150",
-  "Nome currículo antigo": "Ambiente Operacional UNIX",
-  "Código currículo novo": "TIN0150",
-  "Nome currículo novo": "Ambiente\nOperacional\nUNIX"
+  "codigoCurriculoAntigo": "TIN0150",
+  "nomeCurriculoAntigo": "Ambiente Operacional UNIX",
+  "codigoCurriculoNovo": "TIN0150",
+  "nomeCurriculoNovo": "Ambiente\nOperacional\nUNIX"
  },
  {
-  "Código currículo antigo": "TIN0146",
-  "Nome currículo antigo": "Compiladores",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0146",
+  "nomeCurriculoAntigo": "Compiladores",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0149",
-  "Nome currículo antigo": "Computação Gráfica",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0149",
+  "nomeCurriculoAntigo": "Computação Gráfica",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0138",
-  "Nome currículo antigo": "Comunicação e Segurança de Dados",
-  "Código currículo novo": "TMP0099",
-  "Nome currículo novo": "Segurança de\nTecnologia da\nInformação"
+  "codigoCurriculoAntigo": "TIN0138",
+  "nomeCurriculoAntigo": "Comunicação e Segurança de Dados",
+  "codigoCurriculoNovo": "TMP0099",
+  "nomeCurriculoNovo": "Segurança de\nTecnologia da\nInformação"
  },
  {
-  "Código currículo antigo": "TIN0158",
-  "Nome currículo antigo": "Desenvolvimento de Servidor WEB",
-  "Código currículo novo": "TMP0068",
-  "Nome currículo novo": "Desenvolvimento\nde Servidor Web"
+  "codigoCurriculoAntigo": "TIN0158",
+  "nomeCurriculoAntigo": "Desenvolvimento de Servidor WEB",
+  "codigoCurriculoNovo": "TMP0068",
+  "nomeCurriculoNovo": "Desenvolvimento\nde Servidor Web"
  },
  {
-  "Código currículo antigo": "TIN0143",
-  "Nome currículo antigo": "Fluxos em Redes",
-  "Código currículo novo": "TMP0056",
-  "Nome currículo novo": "Fluxos em\nRedes"
+  "codigoCurriculoAntigo": "TIN0143",
+  "nomeCurriculoAntigo": "Fluxos em Redes",
+  "codigoCurriculoNovo": "TMP0056",
+  "nomeCurriculoNovo": "Fluxos em\nRedes"
  },
  {
-  "Código currículo antigo": "TIN0147",
-  "Nome currículo antigo": "Fundamentos de Representação de Conhecimento e Raciocínio",
-  "Código currículo novo": "TIN0147",
-  "Nome currículo novo": "Fundamentos de\nRepresentação\nde\nConhecimento e\nRaciocínio"
+  "codigoCurriculoAntigo": "TIN0147",
+  "nomeCurriculoAntigo": "Fundamentos de Representação de Conhecimento e Raciocínio",
+  "codigoCurriculoNovo": "TIN0147",
+  "nomeCurriculoNovo": "Fundamentos de\nRepresentação\nde\nConhecimento e\nRaciocínio"
  },
  {
-  "Código currículo antigo": "TIN0136",
-  "Nome currículo antigo": "Gerência de dados em Ambientes Distribuídos e Paralelos",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0136",
+  "nomeCurriculoAntigo": "Gerência de dados em Ambientes Distribuídos e Paralelos",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0160",
-  "Nome currículo antigo": "Gestão de Processos de Negócios",
-  "Código currículo novo": "TMP0014",
-  "Nome currículo novo": "Gestão de\nProcessos de\nNegócios"
+  "codigoCurriculoAntigo": "TIN0160",
+  "nomeCurriculoAntigo": "Gestão de Processos de Negócios",
+  "codigoCurriculoNovo": "TMP0014",
+  "nomeCurriculoNovo": "Gestão de\nProcessos de\nNegócios"
  },
  {
-  "Código currículo antigo": "TIN0128",
-  "Nome currículo antigo": "Informática na Educação",
-  "Código currículo novo": "TMP0038",
-  "Nome currículo novo": "Informática na Educação"
+  "codigoCurriculoAntigo": "TIN0128",
+  "nomeCurriculoAntigo": "Informática na Educação",
+  "codigoCurriculoNovo": "TMP0038",
+  "nomeCurriculoNovo": "Informática na Educação"
  },
  {
-  "Código currículo antigo": "TIN0172",
-  "Nome currículo antigo": "Inteligência Artificial",
-  "Código currículo novo": "TMP0058",
-  "Nome currículo novo": "Introdução à\nInteligência\nArtificial"
+  "codigoCurriculoAntigo": "TIN0172",
+  "nomeCurriculoAntigo": "Inteligência Artificial",
+  "codigoCurriculoNovo": "TMP0058",
+  "nomeCurriculoNovo": "Introdução à\nInteligência\nArtificial"
  },
  {
-  "Código currículo antigo": "TIN0142",
-  "Nome currículo antigo": "Programação Linear",
-  "Código currículo novo": "TIN0142",
-  "Nome currículo novo": "Programação Linear"
+  "codigoCurriculoAntigo": "TIN0142",
+  "nomeCurriculoAntigo": "Programação Linear",
+  "codigoCurriculoNovo": "TIN0142",
+  "nomeCurriculoNovo": "Programação Linear"
  },
  {
-  "Código currículo antigo": "TIN0159",
-  "Nome currículo antigo": "Sistemas Colaborativos",
-  "Código currículo novo": "TIN0159",
-  "Nome currículo novo": "Sistemas Colaborativos"
+  "codigoCurriculoAntigo": "TIN0159",
+  "nomeCurriculoAntigo": "Sistemas Colaborativos",
+  "codigoCurriculoNovo": "TIN0159",
+  "nomeCurriculoNovo": "Sistemas Colaborativos"
  },
  {
-  "Código currículo antigo": "TIN0148",
-  "Nome currículo antigo": "Sistemas Multimídia",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0148",
+  "nomeCurriculoAntigo": "Sistemas Multimídia",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0145",
-  "Nome currículo antigo": "Tópicos Avançados em Algoritmos I",
-  "Código currículo novo": "TMP0063",
-  "Nome currículo novo": "Tópicos em\nAlgoritmos"
+  "codigoCurriculoAntigo": "TIN0145",
+  "nomeCurriculoAntigo": "Tópicos Avançados em Algoritmos I",
+  "codigoCurriculoNovo": "TMP0063",
+  "nomeCurriculoNovo": "Tópicos em\nAlgoritmos"
  },
  {
-  "Código currículo antigo": "TIN0137",
-  "Nome currículo antigo": "Tópicos Avançados em Bancos de Dados I",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0137",
+  "nomeCurriculoAntigo": "Tópicos Avançados em Bancos de Dados I",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0162",
-  "Nome currículo antigo": "Tópicos Avançados em Bancos de Dados II",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0162",
+  "nomeCurriculoAntigo": "Tópicos Avançados em Bancos de Dados II",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0163",
-  "Nome currículo antigo": "Tópicos Avançados em Bancos de Dados III",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0163",
+  "nomeCurriculoAntigo": "Tópicos Avançados em Bancos de Dados III",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0161",
-  "Nome currículo antigo": "Tópicos Avançados em Engenharia de Software I",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0161",
+  "nomeCurriculoAntigo": "Tópicos Avançados em Engenharia de Software I",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0166",
-  "Nome currículo antigo": "Tópicos Avançados em Engenharia de Software II",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0166",
+  "nomeCurriculoAntigo": "Tópicos Avançados em Engenharia de Software II",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0141",
-  "Nome currículo antigo": "Tópicos Avançados em Redes de Computadores I",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0141",
+  "nomeCurriculoAntigo": "Tópicos Avançados em Redes de Computadores I",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0164",
-  "Nome currículo antigo": "Tópicos Avançados em Redes de Computadores II",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0164",
+  "nomeCurriculoAntigo": "Tópicos Avançados em Redes de Computadores II",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "TIN0165",
-  "Nome currículo antigo": "Tópicos Avançados em Redes de Computadores III",
-  "Código currículo novo": "N\/A",
-  "Nome currículo novo": "N\/A"
+  "codigoCurriculoAntigo": "TIN0165",
+  "nomeCurriculoAntigo": "Tópicos Avançados em Redes de Computadores III",
+  "codigoCurriculoNovo": "N\/A",
+  "nomeCurriculoNovo": "N\/A"
  },
  {
-  "Código currículo antigo": "HDI0164",
-  "Nome currículo antigo": "Culturas\nAfro-Brasileiras em\nSala de Aula",
-  "Código currículo novo": "HDI0164",
-  "Nome currículo novo": "Culturas\nAfro-Brasileiras\nem Sala de Aula"
+  "codigoCurriculoAntigo": "HDI0164",
+  "nomeCurriculoAntigo": "Culturas\nAfro-Brasileiras em\nSala de Aula",
+  "codigoCurriculoNovo": "HDI0164",
+  "nomeCurriculoNovo": "Culturas\nAfro-Brasileiras\nem Sala de Aula"
  },
  {
-  "Código currículo antigo": "SER0012",
-  "Nome currículo antigo": "Educação\nAmbiental e\nCidadania",
-  "Código currículo novo": "SER0012",
-  "Nome currículo novo": "Educação\nAmbiental e\nCidadania"
+  "codigoCurriculoAntigo": "SER0012",
+  "nomeCurriculoAntigo": "Educação\nAmbiental e\nCidadania",
+  "codigoCurriculoNovo": "SER0012",
+  "nomeCurriculoNovo": "Educação\nAmbiental e\nCidadania"
  },
  {
-  "Código currículo antigo": "HDI0142",
-  "Nome currículo antigo": "Língua Brasileira de Sinais",
-  "Código currículo novo": "HDI0142",
-  "Nome currículo novo": "Língua Brasileira de Sinais"
+  "codigoCurriculoAntigo": "HDI0142",
+  "nomeCurriculoAntigo": "Língua Brasileira de Sinais",
+  "codigoCurriculoNovo": "HDI0142",
+  "nomeCurriculoNovo": "Língua Brasileira de Sinais"
  }
 ]
 }

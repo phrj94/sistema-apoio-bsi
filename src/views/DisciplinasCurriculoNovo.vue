@@ -10,13 +10,13 @@
             <v-col v-for="i in periodos" :key="i" class="pa-6 borda-coluna">
                 <div class="mb-8 borda-linha">{{ `${i}° período` }}</div>
 
-                <v-row v-if="disciplinasCursadas.length" v-for="disciplina in disciplinasCursadas" :key="disciplina.Codigo">
+                <v-row v-if="disciplinasCursadasCurriculoNovo.length" v-for="disciplina in disciplinasAlunoCurriculoNovo" :key="disciplina.Codigo">
                     <CaixaDisciplina v-if="disciplina.PeriodoRecomendado === i" @click="disciplinaSelecionada = disciplina"
-                        :disciplina="disciplina" class="mb-4" :cor="checaDisciplinasObrigatoriasCurriculoAntigo(disciplina)" />
+                        :disciplina="disciplina" class="mb-4" :cor="checaDisciplinasObrigatorias(disciplina)" />
                 </v-row>
-                <v-row v-else v-for="(disciplina, index) in disciplinasObrigatoriasCurriculoAntigo" :key="disciplina.Codigo + 'index'">
+                <v-row v-else v-for="(disciplina, index) in disciplinasObrigatoriasCurriculoNovo" :key="disciplina.Codigo + 'index'">
                     <CaixaDisciplina v-if="disciplina.PeriodoRecomendado === i" @click="disciplinaSelecionada = disciplina"
-                        :disciplina="disciplina" class="mb-4" :cor="checaDisciplinasObrigatoriasCurriculoAntigo(disciplina)" />
+                        :disciplina="disciplina" class="mb-4" :cor="checaDisciplinasObrigatorias(disciplina)" />
                 </v-row>
             </v-col>
         </v-row>
@@ -30,23 +30,27 @@ import curriculoAntigoObrigatorias from '../assets/Disciplinas Obrigatórias - C
 import curriculoAntigoOptativas from '../assets/Disciplinas Optativas - Curriculo Antigo.json';
 import curriculoNovoObrigatorias from '../assets/Disciplinas Obrigatórias - Currículo novo.json';
 import curriculoNovoOptativas from '../assets/Disciplinas Optativas - Curriculo Novo.json';
+import dePara from '../assets/De - Para.json';
 import CaixaDisciplina from '../components/CaixaDisciplina.vue';
 import DetalhesDisciplina from '../components/DetalhesDisciplina.vue';
 
 import instance from '../api/instance';
 
 export default {
-    name: "DisciplinasCurriculoAntigo",
+    name: "disciplinasCurriculoNovo",
     data() {
         return {
             disciplinasObrigatoriasCurriculoAntigo: curriculoAntigoObrigatorias.CurriculoAntigo,
             disciplinasOptativasCurriculoAntigo: curriculoAntigoOptativas.CurriculoAntigoOptativas,
             disciplinasObrigatoriasCurriculoNovo: curriculoNovoObrigatorias.CurriculoNovo,
             disciplinasOptativasCurriculoNovo: curriculoNovoOptativas.CurriculoNovoOptativas,
-            disciplinasCursadas: [],
+            disciplinasDePara: JSON.parse(JSON.stringify(dePara['De-Para'])),
+            disciplinasCursadasCurriculoAntigo: [],
+            disciplinasCursadasCurriculoNovo: [],
             periodos: 8,
             disciplinaSelecionada: null,
-            disciplinasAluno: []
+            disciplinasAlunoCurriculoAntigo: [],
+            disciplinasAlunoCurriculoNovo: []
         }
     },
     methods: {
@@ -55,17 +59,17 @@ export default {
             const formData = new FormData();
             formData.append('file', arquivo);
             const jsonDisciplinasAluno = await instance.post("upload", formData, { headers: { 'Content-Type': 'multipart/form-data;boundary=boundary' } })
-            this.disciplinasAluno = JSON.parse(JSON.stringify(jsonDisciplinasAluno.data.disciplinas));
-            //this.checaDisciplinasOptativasCurriculoAntigodisciplinasOptativasCurriculoAntigo();
-            this.pegaDisciplinasCursadas();
+            this.disciplinasAlunoCurriculoAntigo = JSON.parse(JSON.stringify(jsonDisciplinasAluno.data.disciplinas));
+            this.pegaDisciplinasCursadasCurriculoAntigo();
+            this.converterDePara();
         },
 
-        checaDisciplinasObrigatoriasCurriculoAntigo(disciplina) {
+        checaDisciplinasObrigatorias(disciplina) {
 
             const parseDisciplina = JSON.parse(JSON.stringify(disciplina));
-            if (!this.disciplinasAluno.length) return this.corPorStatus("")
+            if (!this.disciplinasAlunoCurriculoNovo.length) return this.corPorStatus("")
 
-            const disciplinaCursada = this.disciplinasAluno.findLast(disciplinaAluno => disciplinaAluno.codigo === parseDisciplina.Codigo);
+            const disciplinaCursada = this.disciplinasAlunoCurriculoNovo.findLast(disciplinaAluno => disciplinaAluno.codigo === parseDisciplina.Codigo);
 
             if (disciplinaCursada !== undefined) {
                 return disciplinaCursada.trancamento ? "trancada" : this.corPorStatus(disciplinaCursada.situacao)
@@ -73,12 +77,12 @@ export default {
             else return this.corPorStatus("Não cursada")
         },
 
-        pegaDisciplinasOptativasCurriculoAntigodisciplinasOptativasCurriculoAntigo() {
-            const parseDisciplinasOptativasCurriculoAntigodisciplinasOptativasCurriculoAntigo = JSON.parse(JSON.stringify(this.disciplinasOptativasCurriculoAntigo));
+        pegaDisciplinasOptativasCurriculoAntigo() {
+            const parseDisciplinasOptativasCurriculoAntigo = JSON.parse(JSON.stringify(this.disciplinasOptativasCurriculoAntigo));
             const optativasAluno = [];
 
-            this.disciplinasAluno.forEach(disciplinaAluno => {
-                const cursada = parseDisciplinasOptativasCurriculoAntigodisciplinasOptativasCurriculoAntigo.findLast(disciplinaOptativa => disciplinaOptativa.Codigo === disciplinaAluno.codigo ? JSON.parse(JSON.stringify(disciplinaOptativa)) : undefined)
+            this.disciplinasAlunoCurriculoAntigo.forEach(disciplinaAluno => {
+                const cursada = parseDisciplinasOptativasCurriculoAntigo.findLast(disciplinaOptativa => disciplinaOptativa.Codigo === disciplinaAluno.codigo ? JSON.parse(JSON.stringify(disciplinaOptativa)) : undefined)
 
                 if (cursada !== undefined && JSON.parse(JSON.stringify(disciplinaAluno)).situacao.includes("Aprovado")) {
                     optativasAluno.push({
@@ -120,23 +124,23 @@ export default {
             return JSON.parse(JSON.stringify(novoArrayOptativas));
         },
 
-        pegaDisciplinasCursadas() {
+        pegaDisciplinasCursadasCurriculoAntigo() {
             const disciplinas = JSON.parse(JSON.stringify(this.disciplinasObrigatoriasCurriculoAntigo))
-            const optativas = this.pegaDisciplinasOptativasCurriculoAntigodisciplinasOptativasCurriculoAntigo();
-            const disciplinasCursadas = []
+            const optativas = this.pegaDisciplinasOptativasCurriculoAntigo();
+            const disciplinasCursadasCurriculoAntigo = []
             disciplinas.forEach(disciplina => {
-                const disciplinaCursada = this.disciplinasAluno.findLast(disciplinaAluno => disciplinaAluno.codigo === disciplina.Codigo);
+                const disciplinaCursada = this.disciplinasAlunoCurriculoAntigo.findLast(disciplinaAluno => disciplinaAluno.codigo === disciplina.Codigo);
                 if (disciplinaCursada !== undefined) {
-                    disciplinasCursadas.push({ ...disciplina, Situacao: disciplinaCursada.situacao })
+                    disciplinasCursadasCurriculoAntigo.push({ ...disciplina, Situacao: disciplinaCursada.situacao })
                 }
                 else if (disciplina.Tipo === 'Eletiva') {
-                    disciplinasCursadas.push({ ...disciplina, Situacao: "Matricula" })
+                    disciplinasCursadasCurriculoAntigo.push({ ...disciplina, Situacao: "Matricula" })
                 }
-                else if (disciplina.Tipo === 'Obrigatoria') disciplinasCursadas.push(disciplina)
+                else if (disciplina.Tipo === 'Obrigatoria') disciplinasCursadasCurriculoAntigo.push(disciplina)
             })
 
-            let totalDisciplinas = [...disciplinasCursadas, ...optativas];
-            const eletivas = this.disciplinasAluno.filter(disciplina => {
+            let totalDisciplinas = [...disciplinasCursadasCurriculoAntigo, ...optativas];
+            const eletivas = this.disciplinasAlunoCurriculoAntigo.filter(disciplina => {
                 if (!totalDisciplinas.findLast(td => td.Codigo === disciplina.codigo) && disciplina.situacao === "Aprovado") return {
                     Nome: disciplina.name,
                     Codigo: disciplina.codigo,
@@ -151,7 +155,7 @@ export default {
             })
 
             
-            this.disciplinasCursadas = totalDisciplinas;
+            this.disciplinasCursadasCurriculoAntigo = totalDisciplinas;
 
         },
 
@@ -176,6 +180,47 @@ export default {
                 default:
                     return '#F5F5F5';
             }
+        },
+
+        converterDePara() {
+            this.disciplinasCursadasCurriculoAntigo.forEach( disciplina => {
+                const disciplinaCorrespondente = this.disciplinasDePara.findLast(mapper => mapper.codigoCurriculoAntigo === disciplina.Codigo)
+                if(disciplinaCorrespondente !== undefined){
+                    var disciplinaCurriculoNovo = this.disciplinasObrigatoriasCurriculoNovo.findLast(novasDisciplinas => novasDisciplinas.Codigo === disciplinaCorrespondente.codigoCurriculoNovo)
+                    if (disciplinaCurriculoNovo == undefined){
+                        disciplinaCurriculoNovo = this.disciplinasOptativasCurriculoAntigo.findLast(novasDisciplinas => novasDisciplinas.Codigo === disciplinaCorrespondente.codigoCurriculoNovo)
+                    }
+                    if(disciplinaCurriculoNovo !== undefined){
+                        console.log("Disciplina convertida:" + JSON.stringify(disciplinaCurriculoNovo))
+                    } else {
+                        console.log("Disciplina sem correspondência:" + JSON.stringify(disciplina))
+                    }
+                    
+                    if(disciplinaCurriculoNovo !== undefined){
+                        this.disciplinasAlunoCurriculoNovo.push({
+                            Codigo: disciplinaCurriculoNovo.Codigo,
+                            Nome: disciplinaCurriculoNovo.Nome,
+                            CargaHoraria: disciplinaCurriculoNovo.CargaHoraria,
+                            Creditos: disciplinaCurriculoNovo.Creditos,
+                            PeriodoRecomendado: disciplinaCurriculoNovo.PeriodoRecomendado,
+                            Sigla: disciplinaCurriculoNovo.Sigla,
+                            Situacao: disciplina.situacao || disciplina.trancamento,
+                            Tipo: disciplinaCurriculoNovo.Tipo
+                        })
+                    } else {
+                        this.disciplinasAlunoCurriculoNovo.push({
+                            Codigo: disciplina.Codigo,
+                            Nome: disciplina.Nome,
+                            CargaHoraria: disciplina.CargaHoraria,
+                            Creditos: disciplina.Creditos,
+                            PeriodoRecomendado: disciplina.PeriodoRecomendado,
+                            Sigla: disciplina.Sigla,
+                            Situacao: disciplina.situacao || disciplina.trancamento,
+                        })
+                    }
+                }
+            })
+            console.log("Array convertido:" + JSON.stringify(this.disciplinasAlunoCurriculoNovo))
         }
     },
     components: { CaixaDisciplina, DetalhesDisciplina }
@@ -190,4 +235,4 @@ export default {
 .borda-linha {
     border-bottom: 1px solid #BDBDBD;
 }
-</style>
+</style>''''
