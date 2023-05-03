@@ -72,7 +72,7 @@ export default {
             const disciplinaCursada = this.disciplinasAlunoCurriculoNovo.findLast(disciplinaAluno => disciplinaAluno.codigo === parseDisciplina.Codigo);
 
             if (disciplinaCursada !== undefined) {
-                return disciplinaCursada.trancamento ? "trancada" : this.corPorStatus(disciplinaCursada.situacao)
+                return disciplinaCursada.Trancamento ? "trancada" : this.corPorStatus(disciplinaCursada.Situacao)
             }
             else return this.corPorStatus("Não cursada")
         },
@@ -183,6 +183,7 @@ export default {
         },
 
         converterDePara() {
+            console.log("Disciplinas cursadas:" + JSON.stringify(this.disciplinasCursadasCurriculoAntigo))
             this.disciplinasCursadasCurriculoAntigo.forEach( disciplina => {
                 const disciplinaCorrespondente = this.disciplinasDePara.findLast(mapper => mapper.codigoCurriculoAntigo === disciplina.Codigo)
                 if(disciplinaCorrespondente !== undefined){
@@ -204,7 +205,7 @@ export default {
                             Creditos: disciplinaCurriculoNovo.Creditos,
                             PeriodoRecomendado: disciplinaCurriculoNovo.PeriodoRecomendado,
                             Sigla: disciplinaCurriculoNovo.Sigla,
-                            Situacao: disciplina.situacao || disciplina.trancamento,
+                            Situacao: disciplina.Situacao || disciplina.Trancamento,
                             Tipo: disciplinaCurriculoNovo.Tipo
                         })
                     } else {
@@ -215,9 +216,19 @@ export default {
                             Creditos: disciplina.Creditos,
                             PeriodoRecomendado: disciplina.PeriodoRecomendado,
                             Sigla: disciplina.Sigla,
-                            Situacao: disciplina.situacao || disciplina.trancamento,
+                            Situacao: disciplina.Situacao || disciplina.Trancamento,
                         })
                     }
+                } else {
+                    this.disciplinasAlunoCurriculoNovo.push({
+                            Codigo: disciplina.Codigo,
+                            Nome: disciplina.Nome,
+                            CargaHoraria: disciplina.CargaHoraria,
+                            Creditos: disciplina.Creditos,
+                            PeriodoRecomendado: disciplina.PeriodoRecomendado,
+                            Sigla: disciplina.Sigla,
+                            Situacao: disciplina.Situacao || disciplina.Trancamento,
+                        })
                 }
             })
             console.log("Array convertido:" + JSON.stringify(this.disciplinasAlunoCurriculoNovo))
