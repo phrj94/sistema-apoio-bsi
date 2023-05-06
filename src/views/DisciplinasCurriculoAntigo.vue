@@ -12,11 +12,11 @@
 
                 <v-row v-if="disciplinasCursadas.length" v-for="disciplina in disciplinasCursadas" :key="disciplina.Codigo">
                     <CaixaDisciplina v-if="disciplina.PeriodoRecomendado === i" @click="disciplinaSelecionada = disciplina"
-                        :disciplina="disciplina" class="mb-4" :cor="checaDisciplinasObrigatoriasCurriculoAntigo(disciplina)" />
+                        :disciplina="disciplina" class="mb-4" :cor="corPorStatus(disciplina.Situcao)" />
                 </v-row>
-                <v-row v-else v-for="(disciplina, index) in disciplinasObrigatoriasCurriculoAntigo" :key="disciplina.Codigo + 'index'">
+                <v-row v-else v-for="disciplina in disciplinasObrigatoriasCurriculoAntigo" :key="disciplina.Codigo + 'index'">
                     <CaixaDisciplina v-if="disciplina.PeriodoRecomendado === i" @click="disciplinaSelecionada = disciplina"
-                        :disciplina="disciplina" class="mb-4" :cor="checaDisciplinasObrigatoriasCurriculoAntigo(disciplina)" />
+                        :disciplina="disciplina" class="mb-4" cor="#F5F5F5" />
                 </v-row>
             </v-col>
         </v-row>
@@ -134,7 +134,7 @@ export default {
                 }
                 else if (disciplina.Tipo === 'Obrigatoria') disciplinasCursadas.push(disciplina)
             })
-
+           
             let totalDisciplinas = [...disciplinasCursadas, ...optativas];
             const eletivas = this.disciplinasAluno.filter(disciplina => {
                 if (!totalDisciplinas.findLast(td => td.Codigo === disciplina.codigo) && disciplina.situacao === "Aprovado") return {
@@ -146,13 +146,13 @@ export default {
             
             eletivas.forEach(eletiva => {
                 const iEletiva = totalDisciplinas.findIndex(disciplina => disciplina.Tipo === "Eletiva" && disciplina.Situacao === "Matricula");
-                const stringifyEletiva =  JSON.parse(JSON.stringify(eletiva))
+                const stringifyEletiva = JSON.parse(JSON.stringify(eletiva))
                 totalDisciplinas[iEletiva] = { ...totalDisciplinas[iEletiva], Codigo: stringifyEletiva.codigo, Situacao: stringifyEletiva.situacao, Nome: stringifyEletiva.Nome }
             })
 
             
             this.disciplinasCursadas = totalDisciplinas;
-
+            
         },
 
         corPorStatus(situacao) {

@@ -428,7 +428,7 @@
   "Creditos": null,
   "PeriodoRecomendado": 7,
   "Sigla": "OPT VII",
-  "Tipo": "Optativa"
+  "Tipo": "Optativa/Eletiva"
 },
 {
   "Codigo": "OPT0008",
@@ -455,7 +455,7 @@
     "Creditos": null,
     "PeriodoRecomendado": 8,
     "Sigla": "OPT X",
-    "Tipo": "Optativa"
+    "Tipo": "Optativa/Eletiva"
   }
 ]
 }
