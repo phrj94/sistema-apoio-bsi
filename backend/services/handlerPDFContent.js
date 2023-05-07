@@ -5,13 +5,16 @@ const pdfParse = require('pdf-parse');
 const regexDisciplina = new RegExp(/^[a-zA-Z]{3}[0-9]{4}/mi);
 const regexSituacao = new RegExp(/(aprovado.*|reprovado.*|matrícula.*|trancamento.*)$/gmi);
 const regexTrancamento = new RegExp(/(trancamento.*)$/gmi);
+//Melhorar, casos de nomes de disciplina muito grandes e que acabam quebrando em duas linhas não estão sendo contemplados.
+const regexNomeDisciplina = new RegExp(/[a-zA-Z]{3}[0-9]{4}([A-Za-záãÁÀÃÂÉÈÊÍÌÎÓÒÕÔÚÙÛÇ\s]*)/gmi);
 
 const criaVetorDisciplinas = (disciplinas) => {
    
     const vetorDisciplinas = disciplinas.map(disciplina => ({
         codigo: disciplina.match(regexDisciplina) && disciplina.match(regexDisciplina).toString(),
         situacao: disciplina.match(regexSituacao) && disciplina.match(regexSituacao).toString(),
-        trancamento: disciplina.match(regexTrancamento) && disciplina.match(regexTrancamento).toString()
+        trancamento: disciplina.match(regexTrancamento) && disciplina.match(regexTrancamento).toString(),
+        nome: disciplina.match(regexNomeDisciplina).toString().split(regexDisciplina)[1]
     }))
    
     return vetorDisciplinas;

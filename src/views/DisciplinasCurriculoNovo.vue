@@ -147,7 +147,7 @@ export default {
             let totalDisciplinas = [...disciplinasCursadasCurriculoAntigo, ...optativas];
             const eletivas = this.disciplinasAlunoCurriculoAntigo.filter(disciplina => {
                 if (!totalDisciplinas.findLast(td => td.Codigo === disciplina.codigo) && disciplina.situacao === "Aprovado") return {
-                    Nome: disciplina.name,
+                    Nome: disciplina.nome,
                     Codigo: disciplina.codigo,
                     Situacao: "Aprovado"
                 }
@@ -156,7 +156,7 @@ export default {
             eletivas.forEach(eletiva => {
                 const iEletiva = totalDisciplinas.findIndex(disciplina => disciplina.Tipo === "Eletiva" && disciplina.Situacao === "Matricula");
                 const stringifyEletiva = JSON.parse(JSON.stringify(eletiva))
-                totalDisciplinas[iEletiva] = { ...totalDisciplinas[iEletiva], Codigo: stringifyEletiva.codigo, Situacao: stringifyEletiva.situacao, Nome: stringifyEletiva.Nome }
+                totalDisciplinas[iEletiva] = { ...totalDisciplinas[iEletiva], Codigo: stringifyEletiva.codigo, Situacao: stringifyEletiva.situacao, Nome: stringifyEletiva.nome }
             })
 
 
@@ -196,7 +196,7 @@ export default {
                     const disciplinaMapeada = this.disciplinasDePara.find(dePara => this.disciplinasCursadasCurriculoAntigo.some(disciplinaAntiga => dePara.codigoCurriculoAntigo === disciplinaAntiga.Codigo && disciplinaAntiga.Tipo === "Optativa" && !disciplinasOptativasCursadas.some(opt => opt.codigoCurriculoNovo === dePara.codigoCurriculoNovo)) && dePara);
                     if (disciplinaMapeada) {
                         disciplinasOptativasCursadas.push(disciplinaMapeada);
-                        return { ...this.disciplinasCursadasCurriculoAntigo.find(disciplina => disciplina.Codigo === disciplinaMapeada.codigoCurriculoAntigo), Codigo: disciplinaMapeada.codigoCurriculoNovo, PeriodoRecomendado: disciplinaCurriculoNovo.PeriodoRecomendado }
+                        return { ...this.disciplinasCursadasCurriculoAntigo.find(disciplina => disciplina.Codigo === disciplinaMapeada.codigoCurriculoAntigo), Codigo: disciplinaMapeada.codigoCurriculoNovo, PeriodoRecomendado: disciplinaCurriculoNovo.PeriodoRecomendado}
                     }
                     else return disciplinaCurriculoNovo;
                 }

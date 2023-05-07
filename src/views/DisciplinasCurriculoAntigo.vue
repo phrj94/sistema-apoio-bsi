@@ -12,12 +12,13 @@
 
                 <v-row v-if="disciplinasCursadas.length" v-for="disciplina in disciplinasCursadas" :key="disciplina.Codigo">
                     <CaixaDisciplina v-if="disciplina.PeriodoRecomendado === i" @click="disciplinaSelecionada = disciplina"
-                        :disciplina="disciplina" class="mb-4" :cor="corPorStatus(disciplina.Situcao)" />
+                        :disciplina="disciplina" class="mb-4" :cor="checaDisciplinasObrigatorias(disciplina)" />
                 </v-row>
-                <v-row v-else v-for="disciplina in disciplinasObrigatoriasCurriculoAntigo" :key="disciplina.Codigo + 'index'">
+                <v-row v-else v-for="(disciplina, index) in disciplinasObrigatorias" :key="disciplina.Codigo + 'index'">
                     <CaixaDisciplina v-if="disciplina.PeriodoRecomendado === i" @click="disciplinaSelecionada = disciplina"
-                        :disciplina="disciplina" class="mb-4" cor="#F5F5F5" />
+                        :disciplina="disciplina" class="mb-4" :cor="checaDisciplinasObrigatorias(disciplina)" />
                 </v-row>
+
             </v-col>
         </v-row>
         <v-dialog v-model="disciplinaSelecionada">
@@ -28,8 +29,6 @@
 <script>
 import curriculoAntigoObrigatorias from '../assets/Disciplinas Obrigatórias - Currículo antigo.json';
 import curriculoAntigoOptativas from '../assets/Disciplinas Optativas - Curriculo Antigo.json';
-import curriculoNovoObrigatorias from '../assets/Disciplinas Obrigatórias - Currículo novo.json';
-import curriculoNovoOptativas from '../assets/Disciplinas Optativas - Curriculo Novo.json';
 import CaixaDisciplina from '../components/CaixaDisciplina.vue';
 import DetalhesDisciplina from '../components/DetalhesDisciplina.vue';
 
@@ -39,10 +38,8 @@ export default {
     name: "DisciplinasCurriculoAntigo",
     data() {
         return {
-            disciplinasObrigatoriasCurriculoAntigo: curriculoAntigoObrigatorias.CurriculoAntigo,
-            disciplinasOptativasCurriculoAntigo: curriculoAntigoOptativas.CurriculoAntigoOptativas,
-            disciplinasObrigatoriasCurriculoNovo: curriculoNovoObrigatorias.CurriculoNovo,
-            disciplinasOptativasCurriculoNovo: curriculoNovoOptativas.CurriculoNovoOptativas,
+            disciplinasObrigatorias: curriculoAntigoObrigatorias.CurriculoAntigo,
+            disciplinasOptativas: curriculoAntigoOptativas.CurriculoAntigoOptativas,
             disciplinasCursadas: [],
             periodos: 8,
             disciplinaSelecionada: null,
@@ -54,13 +51,13 @@ export default {
             const arquivo = this.$refs.historico.files[0];
             const formData = new FormData();
             formData.append('file', arquivo);
-            const jsonDisciplinasAluno = await instance.post("upload", formData, { headers: { 'Content-Type': 'multipart/form-data;boundary=boundary' } })
-            this.disciplinasAluno = JSON.parse(JSON.stringify(jsonDisciplinasAluno.data.disciplinas));
-            //this.checaDisciplinasOptativasCurriculoAntigodisciplinasOptativasCurriculoAntigo();
+            const res = await instance.post("upload", formData, { headers: { 'Content-Type': 'multipart/form-data;boundary=boundary' } })
+            this.disciplinasAluno = JSON.parse(JSON.stringify(res.data.disciplinas));
+            //this.checaDisciplinasOptativas();
             this.pegaDisciplinasCursadas();
         },
 
-        checaDisciplinasObrigatoriasCurriculoAntigo(disciplina) {
+        checaDisciplinasObrigatorias(disciplina) {
 
             const parseDisciplina = JSON.parse(JSON.stringify(disciplina));
             if (!this.disciplinasAluno.length) return this.corPorStatus("")
@@ -73,12 +70,12 @@ export default {
             else return this.corPorStatus("Não cursada")
         },
 
-        pegaDisciplinasOptativasCurriculoAntigodisciplinasOptativasCurriculoAntigo() {
-            const parseDisciplinasOptativasCurriculoAntigodisciplinasOptativasCurriculoAntigo = JSON.parse(JSON.stringify(this.disciplinasOptativasCurriculoAntigo));
+        pegaDisciplinasOptativas() {
+            const parseDisciplinasOptativas = JSON.parse(JSON.stringify(this.disciplinasOptativas));
             const optativasAluno = [];
 
             this.disciplinasAluno.forEach(disciplinaAluno => {
-                const cursada = parseDisciplinasOptativasCurriculoAntigodisciplinasOptativasCurriculoAntigo.findLast(disciplinaOptativa => disciplinaOptativa.Codigo === disciplinaAluno.codigo ? JSON.parse(JSON.stringify(disciplinaOptativa)) : undefined)
+                const cursada = parseDisciplinasOptativas.findLast(disciplinaOptativa => disciplinaOptativa.Codigo === disciplinaAluno.codigo ? JSON.parse(JSON.stringify(disciplinaOptativa)) : undefined)
 
                 if (cursada !== undefined && JSON.parse(JSON.stringify(disciplinaAluno)).situacao.includes("Aprovado")) {
                     optativasAluno.push({
@@ -121,8 +118,8 @@ export default {
         },
 
         pegaDisciplinasCursadas() {
-            const disciplinas = JSON.parse(JSON.stringify(this.disciplinasObrigatoriasCurriculoAntigo))
-            const optativas = this.pegaDisciplinasOptativasCurriculoAntigodisciplinasOptativasCurriculoAntigo();
+            const disciplinas = JSON.parse(JSON.stringify(this.disciplinasObrigatorias))
+            const optativas = this.pegaDisciplinasOptativas();
             const disciplinasCursadas = []
             disciplinas.forEach(disciplina => {
                 const disciplinaCursada = this.disciplinasAluno.findLast(disciplinaAluno => disciplinaAluno.codigo === disciplina.Codigo);
@@ -134,11 +131,11 @@ export default {
                 }
                 else if (disciplina.Tipo === 'Obrigatoria') disciplinasCursadas.push(disciplina)
             })
-           
+
             let totalDisciplinas = [...disciplinasCursadas, ...optativas];
             const eletivas = this.disciplinasAluno.filter(disciplina => {
                 if (!totalDisciplinas.findLast(td => td.Codigo === disciplina.codigo) && disciplina.situacao === "Aprovado") return {
-                    Nome: disciplina.name,
+                    Nome: disciplina.nome,
                     Codigo: disciplina.codigo,
                     Situacao: "Aprovado"
                 }
@@ -146,13 +143,13 @@ export default {
             
             eletivas.forEach(eletiva => {
                 const iEletiva = totalDisciplinas.findIndex(disciplina => disciplina.Tipo === "Eletiva" && disciplina.Situacao === "Matricula");
-                const stringifyEletiva = JSON.parse(JSON.stringify(eletiva))
-                totalDisciplinas[iEletiva] = { ...totalDisciplinas[iEletiva], Codigo: stringifyEletiva.codigo, Situacao: stringifyEletiva.situacao, Nome: stringifyEletiva.Nome }
+                const eletivaJson = JSON.parse(JSON.stringify(eletiva))
+                totalDisciplinas[iEletiva] = { ...totalDisciplinas[iEletiva], Codigo: eletivaJson.codigo, Situacao: eletivaJson.situacao, Nome: eletivaJson.nome }
             })
 
             
             this.disciplinasCursadas = totalDisciplinas;
-            
+
         },
 
         corPorStatus(situacao) {
