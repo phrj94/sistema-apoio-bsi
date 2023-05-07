@@ -10,7 +10,7 @@
             <v-col v-for="i in periodos" :key="i" class="pa-6 borda-coluna">
                 <div class="mb-8 borda-linha">{{ `${i}° período` }}</div>
 
-                <v-row v-if="disciplinasAlunoCurriculoNovo.length" v-for="disciplina in totalDisciplinasAluno"
+                <v-row v-if="totalDisciplinasAluno.length" v-for="disciplina in totalDisciplinasAluno"
                     :key="disciplina.Codigo">
                     <CaixaDisciplina v-if="disciplina.PeriodoRecomendado === i" @click="disciplinaSelecionada = disciplina"
                         :disciplina="disciplina" class="mb-4" :cor="corPorStatus(disciplina.Situacao)" />
@@ -189,62 +189,94 @@ export default {
         },
 
         converterDePara() {
-
-            this.disciplinasCursadasCurriculoAntigo.forEach(disciplina => {
-                const disciplinaCorrespondente = this.disciplinasDePara.findLast(mapper => mapper.codigoCurriculoAntigo === disciplina.Codigo)
-
-                if (disciplinaCorrespondente !== undefined) {
-                    let disciplinaCurriculoNovo = this.disciplinasObrigatoriasCurriculoNovo.findLast(novasDisciplinas => novasDisciplinas.Codigo === disciplinaCorrespondente.codigoCurriculoNovo)
-
-                    if (disciplinaCurriculoNovo == undefined) {
-                        disciplinaCurriculoNovo = this.disciplinasOptativasCurriculoNovo.findLast(novasDisciplinas => novasDisciplinas.Codigo === disciplinaCorrespondente.codigoCurriculoNovo)
+            const disciplinasOptativasCursadas = [];
+            const disciplinasEletivasCursadasAntigo = this.disciplinasCursadasCurriculoAntigo.filter(disciplina => disciplina.Tipo === "Eletiva" && disciplina.Situacao === "Aprovado");
+            this.totalDisciplinasAluno = this.disciplinasObrigatoriasCurriculoNovo.map(disciplinaCurriculoNovo => {
+                if (disciplinaCurriculoNovo.Tipo === "Optativa") {
+                    const disciplinaMapeada = this.disciplinasDePara.find(dePara => this.disciplinasCursadasCurriculoAntigo.some(disciplinaAntiga => dePara.codigoCurriculoAntigo === disciplinaAntiga.Codigo && disciplinaAntiga.Tipo === "Optativa" && !disciplinasOptativasCursadas.some(opt => opt.codigoCurriculoNovo === dePara.codigoCurriculoNovo)) && dePara);
+                    if (disciplinaMapeada) {
+                        disciplinasOptativasCursadas.push(disciplinaMapeada);
+                        return { ...this.disciplinasCursadasCurriculoAntigo.find(disciplina => disciplina.codigo === disciplinaMapeada.codigoCurriculoAntigo), Codigo: disciplinaMapeada.codigoCurriculoNovo }
                     }
-
-
-                    if (disciplinaCurriculoNovo !== undefined) {
-                        this.disciplinasAlunoCurriculoNovo.push({
-                            Codigo: disciplinaCurriculoNovo.Codigo,
-                            Nome: disciplinaCurriculoNovo.Nome,
-                            CargaHoraria: disciplinaCurriculoNovo.CargaHoraria,
-                            Creditos: disciplinaCurriculoNovo.Creditos,
-                            PeriodoRecomendado: disciplinaCurriculoNovo.PeriodoRecomendado,
-                            Sigla: disciplinaCurriculoNovo.Sigla,
-                            Situacao: disciplina.Situacao || disciplina.Trancamento,
-                            Tipo: disciplinaCurriculoNovo.Tipo
-                        })
-                    }
-                    //  else {
-                    //     this.disciplinasAlunoCurriculoNovo.push({
-                    //         Codigo: disciplina.Codigo,
-                    //         Nome: disciplina.Nome,
-                    //         CargaHoraria: disciplina.CargaHoraria,
-                    //         Creditos: disciplina.Creditos,
-                    //         PeriodoRecomendado: disciplina.PeriodoRecomendado,
-                    //         Sigla: disciplina.Sigla,
-                    //         Situacao: disciplina.Situacao || disciplina.Trancamento,
-                    //     })
-                    // }
-                } else {
-                    this.disciplinasAlunoCurriculoNovo.push({
-                        Codigo: disciplina.Codigo,
-                        Nome: disciplina.Nome,
-                        CargaHoraria: disciplina.CargaHoraria,
-                        Creditos: disciplina.Creditos,
-                        PeriodoRecomendado: disciplina.PeriodoRecomendado,
-                        Sigla: disciplina.Sigla,
-                        Situacao: disciplina.Situacao || disciplina.Trancamento,
-                        Tipo: "Eletiva"
-                    })
+                    else return disciplinaCurriculoNovo;
                 }
-            })
 
-            this.totalDisciplinasAluno = this.disciplinasObrigatoriasCurriculoNovo.map(disciplinaNovo => {
-                const disciplinaCursada = this.disciplinasAlunoCurriculoNovo.find(disciplinaAluno => disciplinaAluno.Codigo === disciplinaNovo.Codigo)
+                if (disciplinaCurriculoNovo.Tipo === "Optativa/Eletiva") {
+                    if (disciplinasEletivasCursadasAntigo.length) {
+                        return {...disciplinasEletivasCursadasAntigo.shift(), PeriodoRecomendado: disciplinaCurriculoNovo.PeriodoRecomendado};
+                    } else {
+                        const disciplinaMapeada = this.disciplinasDePara.find(dePara => this.disciplinasCursadasCurriculoAntigo.some(disciplinaAntiga => dePara.codigoCurriculoAntigo === disciplinaAntiga.Codigo && disciplinaAntiga.Tipo === "Optativa" && !disciplinasOptativasCursadas.some(opt => opt.codigoCurriculoNovo === dePara.codigoCurriculoNovo)) && dePara);
+                        if (disciplinaMapeada) {
+                            disciplinasOptativasCursadas.push(disciplinaMapeada);
+                            return { ...this.disciplinasCursadasCurriculoAntigo.find(disciplina => disciplina.codigo === disciplinaMapeada.codigoCurriculoAntigo), Codigo: disciplinaMapeada.codigoCurriculoNovo, PeriodoRecomendado: disciplinaCurriculoNovo.PeriodoRecomendado }
+                        } else return disciplinaCurriculoNovo
+                    }
+                }
+
+                const disciplinaNova = this.disciplinasDePara.find(dePara => dePara.codigoCurriculoNovo === disciplinaCurriculoNovo.Codigo);
+                if (!disciplinaNova) return { ...disciplinaCurriculoNovo, Situacao: "Matrícula" }
                 
-                return { ...disciplinaNovo, Situacao: disciplinaCursada?.Situacao ? disciplinaCursada.Situacao : "Matrícula" };
+                const disciplinaMapeada = this.disciplinasCursadasCurriculoAntigo.findLast(disciplinaAntiga => disciplinaAntiga.Codigo === disciplinaNova.codigoCurriculoAntigo);
+                if (disciplinaMapeada) return { ...disciplinaCurriculoNovo, Situacao: disciplinaMapeada.Situacao ? disciplinaMapeada.Situacao : "Matrícula" }
+                else return disciplinaCurriculoNovo
             })
+            //console.log(this.disciplinasAlunoCurriculoAntigo)
+            //console.log(this.totalDisciplinasAluno)
+            // this.disciplinasCursadasCurriculoAntigo.forEach(disciplina => {
+            //     const disciplinaCorrespondente = this.disciplinasDePara.findLast(mapper => mapper.codigoCurriculoAntigo === disciplina.Codigo)
 
-          
+            //     if (disciplinaCorrespondente !== undefined) {
+            //         let disciplinaCurriculoNovo = this.disciplinasObrigatoriasCurriculoNovo.findLast(novasDisciplinas => novasDisciplinas.Codigo === disciplinaCorrespondente.codigoCurriculoNovo)
+
+            //         if (disciplinaCurriculoNovo == undefined) {
+            //             disciplinaCurriculoNovo = this.disciplinasOptativasCurriculoNovo.findLast(novasDisciplinas => novasDisciplinas.Codigo === disciplinaCorrespondente.codigoCurriculoNovo)
+            //         }
+
+
+            //         if (disciplinaCurriculoNovo !== undefined) {
+            //             this.disciplinasAlunoCurriculoNovo.push({
+            //                 Codigo: disciplinaCurriculoNovo.Codigo,
+            //                 Nome: disciplinaCurriculoNovo.Nome,
+            //                 CargaHoraria: disciplinaCurriculoNovo.CargaHoraria,
+            //                 Creditos: disciplinaCurriculoNovo.Creditos,
+            //                 PeriodoRecomendado: disciplinaCurriculoNovo.PeriodoRecomendado,
+            //                 Sigla: disciplinaCurriculoNovo.Sigla,
+            //                 Situacao: disciplina.Situacao || disciplina.Trancamento,
+            //                 Tipo: disciplinaCurriculoNovo.Tipo
+            //             })
+            //         }
+            //         //  else {
+            //         //     this.disciplinasAlunoCurriculoNovo.push({
+            //         //         Codigo: disciplina.Codigo,
+            //         //         Nome: disciplina.Nome,
+            //         //         CargaHoraria: disciplina.CargaHoraria,
+            //         //         Creditos: disciplina.Creditos,
+            //         //         PeriodoRecomendado: disciplina.PeriodoRecomendado,
+            //         //         Sigla: disciplina.Sigla,
+            //         //         Situacao: disciplina.Situacao || disciplina.Trancamento,
+            //         //     })
+            //         // }
+            //     } else {
+            //         this.disciplinasAlunoCurriculoNovo.push({
+            //             Codigo: disciplina.Codigo,
+            //             Nome: disciplina.Nome,
+            //             CargaHoraria: disciplina.CargaHoraria,
+            //             Creditos: disciplina.Creditos,
+            //             PeriodoRecomendado: disciplina.PeriodoRecomendado,
+            //             Sigla: disciplina.Sigla,
+            //             Situacao: disciplina.Situacao || disciplina.Trancamento,
+            //             Tipo: "Eletiva"
+            //         })
+            //     }
+            // })
+
+            // this.totalDisciplinasAluno = this.disciplinasObrigatoriasCurriculoNovo.map(disciplinaNovo => {
+            //     const disciplinaCursada = this.disciplinasAlunoCurriculoNovo.find(disciplinaAluno => disciplinaAluno.Codigo === disciplinaNovo.Codigo)
+
+            //     return { ...disciplinaNovo, Situacao: disciplinaCursada?.Situacao ? disciplinaCursada.Situacao : "Matrícula" };
+            // })
+
+
 
 
         }
