@@ -22,6 +22,21 @@
                 </v-row>
             </v-col>
         </v-row>
+        <v-row>
+            <v-col v-for="i in periodos" :key="i" class="pa-6 borda-coluna">
+                <div class="mb-8 borda-linha">{{ `${i}° período` }}</div>
+
+                <v-row v-if="disciplinasCursadasCurriculoAntigo.length" v-for="disciplina in disciplinasCursadasCurriculoAntigo" :key="disciplina.Codigo">
+                    <CaixaDisciplina v-if="disciplina.PeriodoRecomendado === i" @click="disciplinaSelecionada = disciplina"
+                        :disciplina="disciplina" class="mb-4" :cor="corPorStatus(disciplina.Situacao)" />
+                </v-row>
+                <v-row v-else v-for="(disciplina, index) in disciplinasObrigatoriasCurriculoAntigo" :key="disciplina.Codigo + 'index'">
+                    <CaixaDisciplina v-if="disciplina.PeriodoRecomendado === i" @click="disciplinaSelecionada = disciplina"
+                        :disciplina="disciplina" class="mb-4" cor="#F5F5F5" />
+                </v-row>
+
+            </v-col>
+        </v-row>
         <v-dialog v-model="disciplinaSelecionada">
             <DetalhesDisciplina :disciplina="disciplinaSelecionada" />
         </v-dialog>
@@ -293,4 +308,4 @@ export default {
 .borda-linha {
     border-bottom: 1px solid #BDBDBD;
 }
-</style>''''
+</style>

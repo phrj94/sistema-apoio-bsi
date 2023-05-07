@@ -1,5 +1,6 @@
 const Fastify = require('fastify');
 const fs = require('fs');
+const path = require('path');
 const fastifyCors = require('@fastify/cors');
 const fastifyMultipart = require('@fastify/multipart');
 const util = require('util');
@@ -29,7 +30,12 @@ fastify.post('/upload', async (req, reply) => {
     const data = await req.file()
     await pump(data.file, fs.createWriteStream(data.filename))
     const disciplinas = await readPdf(data.filename);
-
+    try {
+        fs.unlinkSync(path.resolve(__dirname, data.filename));
+        console.log('successfully deleted ' + data.filename);
+      } catch (err) {
+        console.log('error: ' +err);
+      }
     reply.send({ disciplinas })
 })
 
