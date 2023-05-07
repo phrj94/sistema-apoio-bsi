@@ -196,7 +196,7 @@ export default {
                     const disciplinaMapeada = this.disciplinasDePara.find(dePara => this.disciplinasCursadasCurriculoAntigo.some(disciplinaAntiga => dePara.codigoCurriculoAntigo === disciplinaAntiga.Codigo && disciplinaAntiga.Tipo === "Optativa" && !disciplinasOptativasCursadas.some(opt => opt.codigoCurriculoNovo === dePara.codigoCurriculoNovo)) && dePara);
                     if (disciplinaMapeada) {
                         disciplinasOptativasCursadas.push(disciplinaMapeada);
-                        return { ...this.disciplinasCursadasCurriculoAntigo.find(disciplina => disciplina.codigo === disciplinaMapeada.codigoCurriculoAntigo), Codigo: disciplinaMapeada.codigoCurriculoNovo }
+                        return { ...this.disciplinasCursadasCurriculoAntigo.find(disciplina => disciplina.Codigo === disciplinaMapeada.codigoCurriculoAntigo), Codigo: disciplinaMapeada.codigoCurriculoNovo, PeriodoRecomendado: disciplinaCurriculoNovo.PeriodoRecomendado }
                     }
                     else return disciplinaCurriculoNovo;
                 }
@@ -221,7 +221,7 @@ export default {
                 else return disciplinaCurriculoNovo
             })
             //console.log(this.disciplinasAlunoCurriculoAntigo)
-            //console.log(this.totalDisciplinasAluno)
+            console.log(this.totalDisciplinasAluno)
             // this.disciplinasCursadasCurriculoAntigo.forEach(disciplina => {
             //     const disciplinaCorrespondente = this.disciplinasDePara.findLast(mapper => mapper.codigoCurriculoAntigo === disciplina.Codigo)
 
