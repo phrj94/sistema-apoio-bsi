@@ -34,7 +34,7 @@ fastify.post('/upload', async (req, reply) => {
         fs.unlinkSync(path.resolve(__dirname, data.filename));
         console.log('successfully deleted ' + data.filename);
       } catch (err) {
-        console.log('error: ' +err);
+        throw new Error(err);
       }
     reply.send({ disciplinas })
 })

@@ -4,8 +4,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <v-layout>
-    <v-app-bar>
-      <RouterLink to="/exemplo">Clique aqui para ver a página de exemplo</RouterLink>
+    <v-app-bar class="pl-4">
+      <!-- <RouterLink to="/historico">Histórico</RouterLink> -->
+      <v-spacer></v-spacer>
+      <v-card-title>Sistema de Apoio à Migração de Grade de BSI (SAMG BSI)</v-card-title>
     </v-app-bar>
     <v-main>
       <RouterView />
