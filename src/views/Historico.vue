@@ -6,9 +6,9 @@
                     @change="lerPlanilhaDisciplinas"></v-file-input>
             </v-col>
         </v-row>
-        <CurriculoAtual :disciplinas-cursadas="disciplinasCursadasCurriculoAntigo" />
+        <CurriculoAtual :disciplinas-cursadas="progressoAlunoGrade" />
 
-        <CurriculoNovo :disciplinas-cursadas="totalDisciplinasAluno" />
+        <CurriculoNovo :disciplinas-cursadas="progressoAlunoGradeNova" />
     </v-container>
 </template>
 <script>
@@ -40,8 +40,17 @@ export default {
             disciplinasAlunoCurriculoAntigo: [],
             disciplinasAlunoCurriculoNovo: [],
             totalDisciplinasAluno: [],
+
+            historico: [],
+            progressoAlunoGrade: [],
+            grade: curriculoAntigoObrigatorias.CurriculoAntigo,
+            gradeNova: curriculoNovoObrigatorias.CurriculoNovo,
+            progressoAlunoGradeNova: [],
+            equivalencias: JSON.parse(JSON.stringify(dePara['De-Para'])),
+            naoEquivalentes: []
         }
     },
+
     methods: {
         async lerPlanilhaDisciplinas() {
             const arquivo = this.$refs.historico.files[0];
@@ -51,29 +60,184 @@ export default {
                 const jsonDisciplinasAluno = await instance.post("upload", formData, { headers: { 'Content-Type': 'multipart/form-data;boundary=boundary' } })
                 this.disciplinasAlunoCurriculoAntigo = JSON.parse(JSON.stringify(jsonDisciplinasAluno.data.disciplinas));
                 this.pegaDisciplinasCursadasCurriculoAntigo();
+                this.lerHistorico();
                 this.converterDePara();
             } catch (error) {
                 console.error(error)
                 this.disciplinasAlunoCurriculoAntigo = [];
-                this.disciplinasCursadasCurriculoAntigo = [],
-                    this.disciplinasAlunoCurriculoAntigo = []
+                this.disciplinasCursadasCurriculoAntigo = []
+                this.disciplinasAlunoCurriculoAntigo = []
                 this.disciplinasAlunoCurriculoNovo = []
                 this.totalDisciplinasAluno = []
             }
 
         },
 
-        checaDisciplinasObrigatorias(disciplina) {
+        lerHistorico() {
+            //Pego somente as obrigatórias
+            const obrigatorias = this.disciplinasObrigatoriasCurriculoAntigo.map(disciplinaCurriculoAntigo => {
+                const disciplina = this.disciplinasAlunoCurriculoAntigo.findLast(discAluno => discAluno.codigo === disciplinaCurriculoAntigo.Codigo)
+                if (disciplina) return { ...disciplinaCurriculoAntigo, Situacao: disciplina.situacao || disciplina.trancamento }
+            }).filter(disciplina => disciplina)
 
-            const parseDisciplina = JSON.parse(JSON.stringify(disciplina));
-            if (!this.disciplinasAlunoCurriculoNovo.length) return this.corPorStatus("")
+            //Pego somente as optativas que o aluno passou
+            const optativas = this.preencheOptativas(this.disciplinasOptativasCurriculoAntigo.map(disciplinaOptativaCurriculoAntigo => {
+                const disciplina = this.disciplinasAlunoCurriculoAntigo.findLast(discAluno => discAluno.codigo === disciplinaOptativaCurriculoAntigo.Codigo)
 
-            const disciplinaCursada = this.disciplinasAlunoCurriculoNovo.findLast(disciplinaAluno => disciplinaAluno.codigo === parseDisciplina.Codigo);
+                if (disciplina && disciplina.situacao === "Aprovado") return { ...disciplinaOptativaCurriculoAntigo, Situacao: disciplina.situacao, Tipo: "Optativa" }
+            }).filter(disciplina => disciplina));
 
-            if (disciplinaCursada !== undefined) {
-                return disciplinaCursada.Trancamento ? "trancada" : this.corPorStatus(disciplinaCursada.Situacao)
+            //Pego somente as eletivas que o aluno passou
+            const eletivas = this.preencheEletivas(this.disciplinasAlunoCurriculoAntigo.map(discAluno =>
+                !obrigatorias.some(disciplina => disciplina?.Codigo === discAluno.codigo)
+                && !optativas.some(disciplina => disciplina?.Codigo === discAluno.codigo)
+                && discAluno.situacao === "Aprovado" && {
+                    Codigo: discAluno.codigo,
+                    Nome: discAluno.nome,
+                    CargaHoraria: 60,
+                    Creditos: 4,
+                    Ementa: null,
+                    PreRequisitos: null,
+                    Situacao: "Aprovado",
+                    Tipo: "Eletiva"
+                }).filter(disciplina => disciplina));
+
+
+            this.historico = [...obrigatorias, ...optativas, ...eletivas]
+            this.fazEquivalencias(obrigatorias, [...optativas], [...eletivas]);
+            this.progressoAlunoGrade = this.grade.map(disciplina => {
+
+                const eletiva = disciplina.Tipo === "Eletiva" && eletivas.length && eletivas.shift();
+                const optativa = disciplina.Tipo === "Optativa" && optativas.length && optativas.shift();
+                if (eletiva) return eletiva;
+                if (optativa) return optativa;
+
+
+                const disciplinaHistorico = this.historico.find(hist => hist.Codigo === disciplina.Codigo)
+                if (disciplinaHistorico) return disciplinaHistorico;
+
+                return disciplina;
+            })
+
+
+        },
+
+        preencheOptativas(disciplinas) {
+
+            const optativas = [];
+            this.disciplinasObrigatoriasCurriculoAntigo.forEach(disciplina => {
+                if (disciplina?.Tipo === "Optativa") {
+                    const optativa = disciplinas.shift();
+
+                    optativa && optativas.push({ ...disciplina, Sigla: optativa.Sigla, ...optativa })
+                }
+            })
+
+            return optativas;
+        },
+
+        preencheEletivas(disciplinas) {
+            const eletivas = [];
+            this.disciplinasObrigatoriasCurriculoAntigo.forEach(disciplina => {
+                if (disciplina?.Tipo === "Eletiva") {
+                    const eletiva = disciplinas.shift();
+                    eletiva && eletivas.push({ ...disciplina, ...eletiva })
+                }
+            })
+
+            return eletivas;
+        },
+
+        fazEquivalencias(obrigatorias, optativas, eletivas) {
+            const naoAproveitadas = [];
+            const equivalencias = this.equivalencias.map(disciplina => {
+                const codigo = disciplina.codigoCurriculoAntigo;
+                const disciplinaHistorico = this.historico.find(item => item.Codigo === codigo);
+
+                if (disciplinaHistorico && disciplinaHistorico?.Situacao.toLowerCase().includes("aprovado") || disciplinaHistorico?.Situacao.toLowerCase().includes("dispensa")) {
+                    return { ...disciplinaHistorico, Codigo: disciplina.codigoCurriculoNovo }
+                }
+            }).filter(disciplina => disciplina) // esse filter faz retornar apenas valores diferentes de undefined ou null
+
+            const optativasGradeNova = this.disciplinasOptativasCurriculoNovo.map(optativa => {
+                const equivalente = equivalencias.find(equivalencia => equivalencia.Codigo === optativa.Codigo);
+
+                if (equivalente) return { ...optativa, Situacao: equivalente.Situacao, Sigla: optativa.Sigla || equivalente.Sigla }
+            }).filter(disciplina => disciplina)
+
+            if (eletivas.length) {
+                this.gradeNova = this.gradeNova.map(item => {
+                    if (item.Tipo === "Optativa/Eletiva" && eletivas.length) {
+                        const eletiva = eletivas.shift();
+                        return { ...eletiva, PeriodoRecomendado: item.PeriodoRecomendado, Situacao: eletiva.Situacao }
+                    }
+                    return item;
+                })
             }
-            else return this.corPorStatus("Não cursada")
+
+            this.progressoAlunoGradeNova = this.gradeNova.map(item => {
+                const disciplina = equivalencias.find(equivalencia => equivalencia.Codigo === item.Codigo)
+
+                if (item.Tipo.includes("Optativa") && item.Codigo.includes("OPT") && optativasGradeNova.length) {
+                    const optativa = optativasGradeNova.shift();
+                    return { ...optativa, PeriodoRecomendado: item.PeriodoRecomendado, Tipo: item.Tipo, Sigla: optativa.Sigla || item.Sigla }
+                }
+                if (disciplina) return { ...disciplina, PeriodoRecomendado: item.PeriodoRecomendado, Tipo: item.Tipo }
+                return { ...item, Situacao: item.Situacao || "Matrícula" }
+            })
+
+        },
+
+        calculaDispensas() {
+            const disciplinas = this.historico.filter(item => item.Nome.toLowerCase().includes("ace"));
+            const TPD = this.historico.find(item => item.codigo === "HTD0058");
+            const dispensas = [];
+
+            if (disciplinas.length >= 3) {
+                for (let i = 1; i <= 2; i++) {
+                    dispensas.push({
+                        Codigo: disciplinas[i].codigo,
+                        Nome: "Atividade de Extensão",
+                        CargaHoraria: 150,
+                        Creditos: null,
+                        PeriodoRecomendado: 8,
+                        Sigla: "AE",
+                        Tipo: "Obrigatória"
+                    })
+
+                }
+            } else if (disciplinas.length == 2) {
+                dispensas.push({
+                    Codigo: disciplinas[i].codigo,
+                    Nome: "Atividade de Extensão",
+                    CargaHoraria: 150,
+                    Creditos: null,
+                    PeriodoRecomendado: 8,
+                    Sigla: "AE",
+                    Tipo: "Obrigatória"
+                })
+            } else if (disciplinas.length === 1 && TPD) {
+                dispensas.push({
+                    Codigo: disciplinas[i].codigo,
+                    Nome: "Atividade de Extensão",
+                    CargaHoraria: 150,
+                    Creditos: null,
+                    PeriodoRecomendado: 8,
+                    Sigla: "AE",
+                    Tipo: "Obrigatória"
+                })
+            } if (disciplinas.some(disciplina => disciplina.Codigo === "TIN0056" || disciplina.Codigo === "TIN0057")) {
+                dispensas.push({
+                    Codigo: "TIN0056-ACE",
+                    Nome: "ACE ?",
+                    CargaHoraria: 90,
+                    Creditos: null,
+                    PeriodoRecomendado: 8,
+                    Sigla: "ACE",
+                    Tipo: "Obrigatória"
+                })
+            }
+            return dispensas
         },
 
         pegaDisciplinasOptativasCurriculoAntigo() {
